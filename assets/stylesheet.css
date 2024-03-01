@@ -532,7 +532,7 @@ body {
     }
 
     50% {
-        transform: translateY(-24px);
+        transform: translateY(5px);
     }
 
     100% {
