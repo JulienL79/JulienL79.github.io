@@ -617,6 +617,9 @@ body {
     25% {
         opacity: 1;
     }
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes opacityOff {
@@ -625,5 +628,8 @@ body {
     }
     25% {
         opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
