@@ -352,7 +352,7 @@ body {
     animation-delay: 1s;
 }
 
-.work p {
+.work a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -367,11 +367,11 @@ body {
     opacity: 0;
 }
 
-.section.actif .work p {
+.section.actif .work a {
     animation: slideLeft 1s ease forwards;
 }
 
-.section.actif .work p:nth-of-type(1) {
+.section.actif .work a:nth-of-type(1) {
     animation: opacity 3s infinite, opacityOff 1s infinite;
     animation-delay: .5s, 3.5s;
 }
