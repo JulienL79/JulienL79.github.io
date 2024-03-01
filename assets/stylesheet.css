@@ -383,22 +383,22 @@ body {
     animation-delay: .5s, 3.5s;
 }
 
-.section.actif .work p:nth-of-type(2) {
+.section.actif .work a:nth-of-type(2) {
     animation: opacity 2.5s infinite, opacityOff 1s infinite;
     animation-delay: 1.5s, 3s;
 }
 
-.section.actif .work p:nth-of-type(3) {
+.section.actif .work a:nth-of-type(3) {
     animation: opacity 2s infinite, opacityOff 1s infinite;
     animation-delay: 2.5s, 2s;
 }
 
-.section.actif .work p:nth-of-type(4) {
+.section.actif .work a:nth-of-type(4) {
     animation: opacity 1.5s infinite, opacityOff 1s infinite;
     animation-delay: 3s, 1.5s;
 }
 
-.section.actif .work p:nth-of-type(5) {
+.section.actif .work a:nth-of-type(5) {
     animation: opacity 1s infinite, opacityOff 1s infinite;
     animation-delay: 3.5s, 1s;
 }
