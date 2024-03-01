@@ -324,14 +324,14 @@ body {
 
 }
 
-.section.actif .skills p:hover {
-    animation: slideUpdown 1s linear infinite;
-    animation-delay: .2s;
-}
-
 .section.actif .skills p {
     animation: slideTop 1s ease forwards;
     animation-delay: calc(.4s * var (--i));
+}
+
+.section.actif .skills p:hover {
+    animation: slideUpdown 1s linear infinite;
+    animation-delay: .2s;
 }
 
 /* Contenu PORTFOLIO ---------------------------------------------------------- */
@@ -350,6 +350,50 @@ body {
 .section.actif .portfolio-content h1 {
     animation: slideRight 1s ease forwards;
     animation-delay: 1s;
+}
+
+.work p {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #D19A66;
+    border-radius: 50%;
+    font-size: 50px;
+    color: #333333;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    opacity: 0;
+}
+
+.section.actif .work p {
+    animation: slideLeft 1s ease forwards;
+}
+
+.section.actif .work p:nth-of-type(1) {
+    animation: opacity 3s infinite, opacityOff 1s infinite;
+    animation-delay: .5s, 3.5s;
+}
+
+.section.actif .work p:nth-of-type(2) {
+    animation: opacity 2.5s infinite, opacityOff 1s infinite;
+    animation-delay: 1.5s, 3s;
+}
+
+.section.actif .work p:nth-of-type(3) {
+    animation: opacity 2s infinite, opacityOff 1s infinite;
+    animation-delay: 2.5s, 2s;
+}
+
+.section.actif .work p:nth-of-type(4) {
+    animation: opacity 1.5s infinite, opacityOff 1s infinite;
+    animation-delay: 3s, 1.5s;
+}
+
+.section.actif .work p:nth-of-type(5) {
+    animation: opacity 1s infinite, opacityOff 1s infinite;
+    animation-delay: 3.5s, 1s;
 }
 
 /* Contenu CONTACT -------------------------------------------------------------- */
@@ -566,7 +610,16 @@ body {
     0% {
         opacity: 0;
     }
-    100% {
+    25% {
         opacity: 1;
+    }
+}
+
+@keyframes opacityOff {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
     }
 }
