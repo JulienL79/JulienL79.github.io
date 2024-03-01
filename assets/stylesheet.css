@@ -1,0 +1,572 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+/*possibilité d'importer des typos dès le début*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+}
+
+body {
+    background: #333333;
+    color: #F2F2F2;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #333333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #F2F2F2;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+.navbar a:nth-child(1) {
+    --i: 1;
+}
+
+.navbar a:nth-child(2) {
+    --i: 2;
+}
+
+.navbar a:nth-child(3) {
+    --i: 3;
+}
+
+.navbar a:nth-child(4) {
+    --i: 4;
+}
+
+.navbar a:nth-child(5) {
+    --i: 5;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 18px;
+    color: #F2F2F2;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition-delay: .1s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.navbar a:hover, .navbar a.active {
+    color:#D19A66;
+}
+
+/* Contenu HOME ---------------------------------------------------------------------------*/
+
+#home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10% 0;
+    opacity: 1;
+}
+
+.section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10% 0;
+    opacity: 0;
+}
+
+.section.actif {
+    animation: opacity 1s ease forwards;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.home-content h3:nth-last-of-type(1) {
+    margin-bottom: 15px;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.home-content h3 span {
+    color: #D19A66;
+}
+
+.cursor {
+    display: inline-block;
+    width: 4px;
+    height: 1em;
+    background-color: #F2F2F2;
+    vertical-align: middle;
+    animation: blink-caret 0.5s step-end infinite alternate;
+}
+
+.home-content p {
+    font-size: 16px;
+    text-align: justify;
+    font-weight: 500;
+    opacity: 0;
+    margin: 1px 0 0 0;
+}
+
+.home-content p:nth-of-type(2n+1) {
+    animation: slideLeft 1s ease forwards, RightLeft 3s ease-in-out infinite;
+    animation-delay: 1s, 2s;
+}
+
+.home-content p:nth-of-type(2n) {
+    animation: slideRight 1s ease forwards, LeftRight 3s ease-in-out infinite;
+    animation-delay: 1s, 2s;
+}
+
+.home-content p:nth-of-type(2),
+.home-content p:nth-of-type(4),
+.home-content p:nth-of-type(5),
+.home-content p:nth-of-type(7) {
+    margin-left: 20px;
+}
+
+.home-content p:nth-of-type(3),
+.home-content p:nth-of-type(6) {
+    margin-left: 40px;
+}
+
+.social-media a:nth-child(1) {
+    --i: 7;
+}
+
+.social-media a:nth-child(2) {
+    --i: 8;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #D19A66;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #D19A66;
+    text-decoration: none;
+    margin: 15px 15px 15px 0;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.social-media a:hover {
+    background: #D19A66;
+    color: #333333;
+    box-shadow: 0 0 20px #D19A66;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #D19A66;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #D19A66;
+    font-size: 16px;
+    color: #333333;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+}
+
+.home-img img {
+    max-width: 400px;
+    margin-right: -20px;
+    box-shadow: 0 0 20px #D19A66;
+    border-radius: 50%;
+    opacity: 0;
+    animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+    animation-delay: 2s, 3s;
+}
+
+/*.home-img img:hover {
+    animation: zoomHover 0.5 ease forwards;
+    animation-delay: .2s;
+}*/
+
+/* Contenu ABOUT ----------------------------------------------------------------*/
+
+.about-content {
+    max-width: 600px;
+}
+
+.about-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+}
+
+.section.actif .about-content h1{
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.about-content p {
+    font-size: 16px;
+    text-align: justify;
+    margin-top: 30px;
+    opacity: 0;
+}
+
+.section.actif .about-content p {
+    animation: slideTop 1s ease forwards;
+    animation-delay: 1s;
+}
+
+/* Contenu SKILLS ---------------------------------------------------------------*/
+
+.skills-content {
+    max-width: 100%;
+}
+
+.skills-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+}
+
+.section.actif .skills-content h1 {
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.skills p:nth-child(1) {
+    --i: 1;
+}
+
+.skills p:nth-child(2) {
+    --i: 2;
+}
+
+.skills p:nth-child(3) {
+    --i: 3;
+}
+
+.skills p:nth-child(4) {
+    --i: 4;
+}
+
+.skills p:nth-child(5) {
+    --i: 5;
+}
+
+.skills p:nth-child(6) {
+    --i: 6;
+}
+
+.skills p {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    border: 2px solid #D19A66;
+    border-radius: 50%;
+    font-size: 50px;
+    color: #D19A66;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    opacity: 0;
+
+}
+
+.section.actif .skills p:hover {
+    animation: slideUpdown 1s linear infinite;
+    animation-delay: .2s;
+}
+
+.section.actif .skills p {
+    animation: slideTop 1s ease forwards;
+    animation-delay: calc(.2s * var (--i));
+}
+
+/* Contenu PORTFOLIO ---------------------------------------------------------- */
+
+.portfolio-content {
+    max-width: 100%;
+}
+
+.portfolio-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+}
+
+.section.actif .portfolio-content h1 {
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+/* Contenu CONTACT -------------------------------------------------------------- */
+
+.contact-content {
+    max-width: 600px;
+}
+
+.contact-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+}
+
+.section.actif .contact-content h1 {
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.contact-content p {
+    font-size: 16px;
+    text-align: justify;
+    margin-top: 30px;
+    opacity: 0;
+}
+
+.section.actif .contact-content p {
+    animation: slideTop 1s ease forwards;
+    animation-delay: 1s;
+}
+
+/* Définition couleur codage ------------------------------------------------- */
+.pCyan{
+    color: #4EC9B0;
+}
+
+.pBlue{
+    color: #1E90FF;
+}
+
+.pGreen{
+    color: #6AA84F;
+    font-style: italic;
+}
+
+.pRed{
+    color: #FF7F7F;
+}
+
+.pPurple{
+    color: #AF95C6;
+}
+
+.pYellow{
+    color: #FFFF99;
+}
+
+.pOrange{
+    color: #D19A66;
+}
+
+/*KEYFRAMES ANIMATTION*/
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes RightLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-16px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes LeftRight {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(16px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomHover {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-24px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUpdown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-24px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+      width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    0% {
+      background-color: transparent;
+    }
+    50% {
+      background-color: #F2F2F2;
+    }
+    100% {
+        background-color: transparent;
+      }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
