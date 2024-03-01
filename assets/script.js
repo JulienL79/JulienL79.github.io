@@ -92,7 +92,6 @@ function typeWriterEffect(words, index = 0) {
         })
         .then(() => new Promise(resolve => setTimeout(() => eraseCharacter(resolve), 1000))) // Effacer le mot actuel après un délai
         .then(() => {
-            cursorElement.style.display = "none"; // Cacher la barre verticale une fois que l'effacement est terminé
             typing = false; // Marquez que l'effet de frappe est terminé
             // Passer au mot suivant après un délai
             typeWriterEffect(words, (index + 1) % words.length);
