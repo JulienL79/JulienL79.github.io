@@ -283,27 +283,27 @@ body {
     animation-delay: 1s;
 }
 
-.skills p:nth-child(1) {
+.skills p:nth-of-type(1) {
     --i: 1;
 }
 
-.skills p:nth-child(2) {
+.skills p:nth-of-type(2) {
     --i: 2;
 }
 
-.skills p:nth-child(3) {
+.skills p:nth-of-type(3) {
     --i: 3;
 }
 
-.skills p:nth-child(4) {
+.skills p:nth-of-type(4) {
     --i: 4;
 }
 
-.skills p:nth-child(5) {
+.skills p:nth-of-type(5) {
     --i: 5;
 }
 
-.skills p:nth-child(6) {
+.skills p:nth-of-type(6) {
     --i: 6;
 }
 
@@ -331,7 +331,7 @@ body {
 
 .section.actif .skills p {
     animation: slideTop 1s ease forwards;
-    animation-delay: calc(.2s * var (--i));
+    animation-delay: calc(.4s * var (--i));
 }
 
 /* Contenu PORTFOLIO ---------------------------------------------------------- */
