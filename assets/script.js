@@ -1,3 +1,8 @@
+var portfolioElem=document.getElementById("portfolio");
+var portfolioClass=portfolioElem.className;
+if (portfolioClass="section actif") {
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const workLinks = document.querySelectorAll('.workLink');
     const delay = 1000; // Durée entre chaque apparition/disparition de lien
@@ -30,6 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     toggleWorkLinks(0); // Démarre le processus en faisant apparaître les liens
 });
+
+}
 
 let typing = false; // Ajoutez cette variable pour suivre l'état de l'effet de frappe
 
