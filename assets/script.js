@@ -1,24 +1,25 @@
 document.addEventListener('DOMContentLoaded', function() {
     const workLinks = document.querySelectorAll('.workLink');
+    const delay = 1500; // Durée entre chaque apparition/disparition de lien
 
     function toggleWorkLinks() {
         workLinks.forEach((link, index) => {
             setTimeout(() => {
                 link.classList.add('active');
-            }, index * 1500); // Change this delay as needed
+            }, index * delay); // Fait apparaître les liens un par un
         });
 
         setTimeout(() => {
-            workLinks.forEach((link, index) => {
+            for (let i = workLinks.length - 1; i >= 0; i--) {
                 setTimeout(() => {
-                    link.classList.remove('active');
-                }, index * 1500); // Change this delay as needed
-            });
-        }, (workLinks.length + 1) * 1500); // Change this delay as needed
+                    workLinks[i].classList.remove('active');
+                }, (workLinks.length - i) * delay); // Fait disparaître les liens un par un, en commençant par le dernier
+            }
+        }, workLinks.length * delay); // Ajoute un délai après l'apparition de tous les liens
     }
 
     toggleWorkLinks();
-    setInterval(toggleWorkLinks, (workLinks.length * 1500 * 2) + 3000); // Change this interval as needed
+    setInterval(toggleWorkLinks, workLinks.length * delay * 2); // Répète le processus après un certain délai
 });
 
 let typing = false; // Ajoutez cette variable pour suivre l'état de l'effet de frappe
