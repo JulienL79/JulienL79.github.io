@@ -118,13 +118,9 @@ let sections = document.querySelectorAll('.section');
     sections.forEach(section => {
       let sectionTop = section.getBoundingClientRect().top;
       let sectionBottom = section.getBoundingClientRect().bottom;
-      let windowHeight = window.innerHeight;
-
-      let sectionTopThreshold = windowHeight * 0; // 10% de la hauteur de la fenêtre
-      let sectionBottomThreshold = windowHeight * 1; // 90% de la hauteur de la fenêtre
 
       // Check if section is in viewport
-      if (sectionTop <= sectionTopThreshold && sectionBottom >= sectionBottomThreshold) {
+      if (sectionTop < window.innerHeight && sectionBottom >= 0) {
         section.classList.add('actif');
       } else {
         section.classList.remove('actif');
