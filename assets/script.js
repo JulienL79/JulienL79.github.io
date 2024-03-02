@@ -1,25 +1,34 @@
 document.addEventListener('DOMContentLoaded', function() {
     const workLinks = document.querySelectorAll('.workLink');
-    const delay = 1500; // Durée entre chaque apparition/disparition de lien
+    const delay = 1000; // Durée entre chaque apparition/disparition de lien
 
-    function toggleWorkLinks() {
-        workLinks.forEach((link, index) => {
+    function toggleWorkLinks(index) {
+        if (index < workLinks.length) {
             setTimeout(() => {
-                link.classList.add('active');
-            }, index * delay); // Fait apparaître les liens un par un
-        });
-
-        setTimeout(() => {
-            for (let i = workLinks.length - 1; i >= 0; i--) {
-                setTimeout(() => {
-                    workLinks[i].classList.remove('active');
-                }, (workLinks.length - i) * delay); // Fait disparaître les liens un par un, en commençant par le dernier
-            }
-        }, workLinks.length * delay); // Ajoute un délai après l'apparition de tous les liens
+                workLinks[index].classList.add('active'); // Fait apparaître le lien correspondant à l'index
+                toggleWorkLinks(index + 1); // Appelle la fonction récursivement pour passer au lien suivant
+            }, delay * index);
+        } else {
+            setTimeout(() => {
+                toggleWorkLinksReverse(workLinks.length - 1); // Appelle la fonction pour faire disparaître les liens dans l'ordre inverse, en commençant par le dernier
+            }, delay * workLinks.length);
+        }
     }
 
-    toggleWorkLinks();
-    setInterval(toggleWorkLinks, workLinks.length * delay * 2); // Répète le processus après un certain délai
+    function toggleWorkLinksReverse(index) {
+        if (index >= 0) {
+            setTimeout(() => {
+                workLinks[index].classList.remove('active'); // Fait disparaître le lien correspondant à l'index
+                toggleWorkLinksReverse(index - 1); // Appelle la fonction récursivement pour passer au lien précédent
+            }, delay);
+        } else {
+            setTimeout(() => {
+                toggleWorkLinks(0); // Répète le processus après que tous les liens ont disparu
+            }, delay);
+        }
+    }
+
+    toggleWorkLinks(0); // Démarre le processus en faisant apparaître les liens
 });
 
 let typing = false; // Ajoutez cette variable pour suivre l'état de l'effet de frappe

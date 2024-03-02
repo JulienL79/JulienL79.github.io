@@ -407,7 +407,9 @@ body {
 .contact-content .mailAddress a,
 .contact-content .phoneNumber a,
 .contact-content .homeLocation a,
-.contact-content .socialMedia a {
+.contact-content .linkedIn a,
+.contact-content .instragram a,
+.contact-content .github a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
