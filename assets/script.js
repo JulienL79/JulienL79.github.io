@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             setTimeout(() => {
                 toggleWorkLinksReverse(workLinks.length - 1); // Appelle la fonction pour faire disparaître les liens dans l'ordre inverse, en commençant par le dernier
-            }, delay * workLinks.length);
+            }, delay * 2);
         }
     }
 
