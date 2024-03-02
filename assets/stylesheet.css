@@ -183,6 +183,10 @@ body {
     --i: 8;
 }
 
+.social-media a:nth-child(1) {
+    --i: 9;
+}
+
 .social-media a {
     display: inline-flex;
     justify-content: center;
@@ -329,7 +333,7 @@ body {
 
 .section.actif .skills p {
     animation: slideTop 1s ease forwards;
-    animation-delay: calc(.4s * var (--i));
+    animation-delay: calc(.3s * var (--i) + 1s);
 }
 
 .section.actif .skills p:hover {
@@ -400,7 +404,10 @@ body {
     animation-delay: .7s;
 }
 
-.contact-content a {
+.contact-content .mailAddress a,
+.contact-content .phoneNumber a,
+.contact-content .homeLocation a,
+.contact-content .socialMedia a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
