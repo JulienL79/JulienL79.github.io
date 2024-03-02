@@ -199,7 +199,7 @@ body {
     font-size: 20px;
     color: #D19A66;
     text-decoration: none;
-    margin: 15px 30px 15px 0;
+    margin: 25px 20px 25px 0;
     transition: .5s ease;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
@@ -333,7 +333,7 @@ body {
 
 .section.actif .skills-content .skills p {
     animation: slideTop 1s ease forwards;
-    animation-delay: calc(.3s * var (--i) + 1s);
+    animation-delay: calc(.3s * var(--i) + 1s);
 }
 
 .section.actif .skills-content .skills p:hover {
