@@ -258,7 +258,7 @@ body {
 
 .section.actif .about-content h1{
     animation: slideRight 1s ease forwards;
-    animation-delay: 1s;
+    animation-delay: .7s;
 }
 
 .about-content p {
@@ -366,6 +366,11 @@ body {
     animation-delay: .7s;
 }
 
+.section.actif .portfolio-content .portfolio-text h3 {
+    animation: slideTop 1s ease forwards;
+    animation-delay: 1s;
+}
+
 .workLink {
     display: inline-flex;
     justify-content: center;
@@ -390,17 +395,18 @@ body {
 
 .contact-content {
     max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Pour aligner les éléments en haut */
 }
 
-.contact-box {
-    max-width: 100%;
-    display: flex;
+.contact-info,
+.social-links {
+    flex-basis: 48%; /* Pour définir la largeur de chaque bloc */
 }
 
 .contact-info {
-    max-width: 50%;
-    display: flex;
-    flex-direction: column;
+    margin-right: 4%; /* Pour ajouter un espace entre les blocs */
 }
 
 .social-links {

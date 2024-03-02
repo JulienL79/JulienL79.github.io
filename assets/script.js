@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
             setTimeout(() => {
                 workLinks[index].classList.add('active'); // Fait apparaître le lien correspondant à l'index
                 toggleWorkLinks(index + 1); // Appelle la fonction récursivement pour passer au lien suivant
-            }, delay * index);
+            }, delay);
         } else {
             setTimeout(() => {
                 toggleWorkLinksReverse(workLinks.length - 1); // Appelle la fonction pour faire disparaître les liens dans l'ordre inverse, en commençant par le dernier
