@@ -390,12 +390,17 @@ body {
 
 .contact-content {
     max-width: 100%;
+}
+
+.contact-box {
+    max-width: 100%;
     display: flex;
 }
 
 .contact-info {
     max-width: 50%;
     display: flex;
+    flex-direction: column;
 }
 
 .social-links {
