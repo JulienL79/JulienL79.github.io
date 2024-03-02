@@ -389,7 +389,19 @@ body {
 /* Contenu CONTACT -------------------------------------------------------------- */
 
 .contact-content {
-    max-width: 600px;
+    max-width: 100%;
+    display: flex;
+}
+
+.contact-info {
+    max-width: 50%;
+    display: flex;
+}
+
+.social-links {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-content h1 {
