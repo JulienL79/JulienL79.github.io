@@ -1,51 +1,26 @@
-/*function typeWriterEffect(words, index = 0) {
-    const textElement = document.querySelector(".multiple-text");
-    const cursorElement = document.querySelector(".cursor");
-    const currentWord = words[index];
-    let i = 0;
+document.addEventListener('DOMContentLoaded', function() {
+    const workLinks = document.querySelectorAll('.workLink');
 
-    // Fonction pour afficher chaque caractère avec un délai
-    function typeCharacter() {
-        if (i < currentWord.length) {
-            textElement.textContent += currentWord.charAt(i);
-            i++;
-            setTimeout(typeCharacter, Math.random() * 250 + 50); // Délai aléatoire pour l'effet de frappe
-        } else {
-            // Une fois que tous les caractères sont affichés, clignoter la barre verticale
-            cursorElement.style.display = "inline-block";
-            function blinkCursor() {
-                cursorElement.style.visibility = (cursorElement.style.visibility === "hidden") ? "visible" : "hidden";
-                setTimeout(blinkCursor, 500); // Délai pour le clignotement
-
-            }
-        blinkCursor();
-        }
-    }
-
-    // Fonction pour effacer le mot précédent
-    function eraseCharacter() {
-        if (i >= 0) {
-            textElement.textContent = currentWord.substring(0, i);
-            i--;
-            setTimeout(eraseCharacter, 100); // Délai pour l'effet d'effacement
-        } else {
-            cursorElement.style.display = "none"; // Cacher la barre verticale une fois que l'effacement est terminé
+    function toggleWorkLinks() {
+        workLinks.forEach((link, index) => {
             setTimeout(() => {
-                // Passer au mot suivant après un délai
-                typeWriterEffect(words, (index + 1) % words.length);
-            }, 500);
-        }
+                link.classList.add('active');
+            }, index * 1500); // Change this delay as needed
+        });
+
+        setTimeout(() => {
+            workLinks.forEach((link, index) => {
+                setTimeout(() => {
+                    link.classList.remove('active');
+                }, index * 1500); // Change this delay as needed
+            });
+        }, (workLinks.length + 1) * 1500); // Change this delay as needed
     }
 
-    // Démarrer l'effet de frappe
-    typeCharacter();
+    toggleWorkLinks();
+    setInterval(toggleWorkLinks, (workLinks.length * 1500 * 2) + 3000); // Change this interval as needed
+});
 
-    // Effacer le mot actuel après un délai
-    setTimeout(() => {
-        eraseCharacter();
-        cursorElement.style.visibility = "visible";
-     }, currentWord.length * 100 + 1000); // Délai pour l'effacement
-}*/
 let typing = false; // Ajoutez cette variable pour suivre l'état de l'effet de frappe
 
 function typeWriterEffect(words, index = 0) {

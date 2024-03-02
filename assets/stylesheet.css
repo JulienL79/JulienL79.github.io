@@ -195,7 +195,7 @@ body {
     font-size: 20px;
     color: #D19A66;
     text-decoration: none;
-    margin: 15px 15px 15px 0;
+    margin: 15px 30px 15px 0;
     transition: .5s ease;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
@@ -350,16 +350,11 @@ body {
     opacity: 0;
 }
 
-.home-content h3 {
+#workDescribe h3 {
+    color: #D19A66;
     font-size: 32px;
     font-weight: 700;
     opacity: 0;
-    animation: slideTop 1s ease forwards;
-    animation-delay: 1s;
-}
-
-#workDescribe {
-    color: #D19A66;
 }
 
 .section.actif .portfolio-content h1 {
@@ -367,7 +362,7 @@ body {
     animation-delay: .7s;
 }
 
-.work a {
+.workLink {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -380,36 +375,11 @@ body {
     text-decoration: none;
     margin: 30px 15px 30px 0;
     opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
-.section.actif .work a {
-    animation: slideLeft 1s ease forwards;
-    animation-delay: 1.2s;
-}
-
-.section.actif .work a:nth-of-type(1) {
-    animation: opacityBlink 6s infinite;
-    animation-delay: 1.2s;
-}
-
-.section.actif .work a:nth-of-type(2) {
-    animation: opacityBlink 5s infinite;
-    animation-delay: 1.2s;
-}
-
-.section.actif .work a:nth-of-type(3) {
-    animation: opacityBlink 4s infinite;
-    animation-delay: 1.2s;
-}
-
-.section.actif .work a:nth-of-type(4) {
-    animation: opacityBlink 3s infinite;
-    animation-delay: 1.2s;
-}
-
-.section.actif .work a:nth-of-type(5) {
-    animation: opacityBlink 2s infinite;
-    animation-delay: 1.2s;
+.section.actif .portfolio-content .workLink.active {
+    opacity: 1;
 }
 
 /* Contenu CONTACT -------------------------------------------------------------- */
@@ -426,6 +396,28 @@ body {
 }
 
 .section.actif .contact-content h1 {
+    animation: slideRight 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.contact-content a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #D19A66;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #D19A66;
+    text-decoration: none;
+    margin: 15px 30px 15px 0;
+    transition: .5s ease;
+    opacity: 0;
+}
+
+.section.actif .contact-content a {
     animation: slideRight 1s ease forwards;
     animation-delay: 1s;
 }
@@ -631,20 +623,5 @@ body {
     }
     100% {
         opacity: 1;
-    }
-}
-
-@keyframes opacityBlink {
-    0% {
-        opacity: 0;
-    }
-    20% {
-        opacity: 1;
-    }
-    80% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
     }
 }
