@@ -120,8 +120,8 @@ let sections = document.querySelectorAll('.section');
       let sectionBottom = section.getBoundingClientRect().bottom;
       let windowHeight = window.innerHeight;
 
-      let sectionTopThreshold = windowHeight * 0.1; // 10% de la hauteur de la fenêtre
-      let sectionBottomThreshold = windowHeight * 0.9; // 90% de la hauteur de la fenêtre
+      let sectionTopThreshold = windowHeight * 0; // 10% de la hauteur de la fenêtre
+      let sectionBottomThreshold = windowHeight * 1; // 90% de la hauteur de la fenêtre
 
       // Check if section is in viewport
       if (sectionTop <= sectionTopThreshold && sectionBottom >= sectionBottomThreshold) {
