@@ -436,12 +436,13 @@ body {
 
 .contact-content {
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 .contact-info,
 .social-links {
     flex: 1;
+    margin-right: 20px;
 }
 
 .contact-content .mailAddress a,
@@ -521,15 +522,7 @@ body {
         transform: translateX(0);
     }
 
-    25%{
-        transform: translateX(-10px);
-    }
-
     50%{
-        transform: translateX(0);
-    }
-
-    75%{
         transform: translateX(-10px);
     }
 
@@ -557,8 +550,16 @@ body {
         transform: translateY(0);
     }
 
+    25%{
+        transform: translateY(-10px);
+    }
+
     50%{
-        transform: translateY(10px);
+        transform: translateY(0);
+    }
+
+    75%{
+        transform: translateY(-10px);
     }
 
     100% {
