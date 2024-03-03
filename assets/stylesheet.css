@@ -41,21 +41,21 @@ body {
 
 .logo p:nth-of-type(1) {
     position: relative;
-    left: 10px;
+    left: 5px;
     animation: logoLeft 2s infinite;
     animation-delay: 1s;
 }
 
 .logo p:nth-of-type(2) {
     position: relative;
-    bottom: 10px;
+    bottom: 8px;
     animation: logoUp 2s infinite;
     animation-delay: 1s;
 }
 
 .logo p:nth-of-type(3) {
     position: relative;
-    right: 10px;
+    right: 5px;
     animation: logoRight 2s infinite;
     animation-delay: 1s;
 }
@@ -518,7 +518,7 @@ body {
     }
 
     50%{
-        transform: translateX(-10px);
+        transform: translateX(-15px);
     }
 
     100% {
@@ -532,7 +532,7 @@ body {
     }
 
     50%{
-        transform: translateX(10px);
+        transform: translateX(15px);
     }
 
     100% {
@@ -546,7 +546,7 @@ body {
     }
 
     50%{
-        transform: translateY(-5px);
+        transform: translateY(-10px);
     }
 
     100% {
