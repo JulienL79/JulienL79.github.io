@@ -48,8 +48,8 @@ body {
 
 .logo p:nth-of-type(2) {
     position: relative;
-    bottom: 8px;
-    animation: logoUp 2s infinite;
+    bottom: 5px;
+    animation: logoUp 6s infinite;
     animation-delay: 1s;
 }
 
