@@ -552,7 +552,7 @@ body {
     }
 
     25%{
-        transform: translateY(-10px);
+        transform: translateY(-15px);
     }
 
     50%{
@@ -560,7 +560,7 @@ body {
     }
 
     75%{
-        transform: translateY(-10px);
+        transform: translateY(-15px);
     }
 
     100% {
