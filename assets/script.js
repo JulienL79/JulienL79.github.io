@@ -56,23 +56,7 @@ const words = ["Développeur Web", "Militaire", "Comptable"];
 typeWriterEffect(words);
 
 //pour faire apparaître les sections au fur et à mesure
-/*const sections = document.querySelectorAll('.section');
 
-window.addEventListener('scroll', () => {
-    sections.forEach(section => {
-        const sectionTop = section.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
-        if (sectionTop < windowHeight * 0.75) {
-            section.classList.add('actif');
-            // Réinitialiser les styles des sections qui ne sont pas actives
-            sections.forEach(otherSection => {
-                if (otherSection !== section) {
-                    otherSection.classList.remove('actif');
-                }
-            });
-        }
-    });
-});*/
 let sections = document.querySelectorAll('.section');
 
   function checkViewport() {
