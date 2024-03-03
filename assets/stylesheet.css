@@ -41,21 +41,21 @@ body {
 
 .logo p:nth-of-type(1) {
     position: relative;
-    right: 3px;
+    left: 3px;
     animation: logoLeft 2s infinite;
     animation-delay: 1s;
 }
 
 .logo p:nth-of-type(2) {
     position: relative;
-    top: 3px;
+    bottom: 3px;
     animation: logoUp 2s infinite;
     animation-delay: 1s;
 }
 
 .logo p:nth-of-type(3) {
     position: relative;
-    left: 3px;
+    right: 3px;
     animation: logoRight 2s infinite;
     animation-delay: 1s;
 }
