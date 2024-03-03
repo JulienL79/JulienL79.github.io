@@ -48,7 +48,7 @@ body {
 
 .logo p:nth-of-type(2) {
     position: relative;
-    bottom: 5px;
+    bottom: 2px;
     animation: logoUp 6s infinite;
     animation-delay: 1s;
 }
@@ -413,15 +413,6 @@ body {
 
 /* Contenu CONTACT -------------------------------------------------------------- */
 
-#contact {
-    display: flex;
-    flex-direction: column;
-}
-
-.header-contact {
-    align-self: flex-start;
-}
-
 .header-contact h1 {
     font-size: 56px;
     font-weight: 700;
@@ -431,27 +422,18 @@ body {
 
 .section.actif .header-contact h1 {
     animation: slideRight 1s ease forwards;
-    animation-delay: .7s;
+    animation-delay: 1s;
 }
 
-.contact-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.mailLinkedIn,
+.phoneInstagram,
+.homeGithub {
+    opacity: 0;
 }
 
-.contact-info,
-.social-links {
-    flex: 1;
-    max-width: 48%;
-}
-
-.contact-content .mailAddress a,
-.contact-content .phoneNumber a,
-.contact-content .homeLocation a,
-.contact-content .linkedIn a,
-.contact-content .instragram a,
-.contact-content .github a {
+.mailLinkedIn a,
+.phoneInstagram a,
+.homeGithub a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -465,24 +447,18 @@ body {
     text-decoration: none;
     margin: 15px 30px 15px 0;
     transition: .5s ease;
-    opacity: 0;
 }
 
-.section.actif .contact-content a {
-    animation: slideRight 1s ease forwards;
-    animation-delay: 1s;
-}
-
-.contact-content p {
-    display: inline-block;
+#contact p {
     font-size: 16px;
     text-align: justify;
-    margin-top: 30px;
-    opacity: 0;
+    margin-right: 20px;
 }
 
-.section.actif .contact-content p {
-    animation: slideTop 1s ease forwards;
+.section.actif .mailLinkedIn,
+.section.actif .phoneInstagram,
+.section.actif .homeGithub {
+    animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
 }
 
