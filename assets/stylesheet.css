@@ -31,13 +31,27 @@ body {
     color: #F2F2F2;
     text-decoration: none;
     font-weight: 600;
-    cursor: default;
     opacity: 0;
     animation: slideRight 1s ease forwards;
 }
 
 .logo p {
     display: inline-block;
+}
+
+.logo p:nth-of-type(1) {
+    animation: logoLeft 2s infinite;
+    animation-delay: 1s;
+}
+
+.logo p:nth-of-type(2) {
+    animation: logoUp 2s infinite;
+    animation-delay: 1s;
+}
+
+.logo p:nth-of-type(3) {
+    animation: logoRight 2s infinite;
+    animation-delay: 1s;
 }
 
 .navbar a:nth-child(1) {
@@ -500,6 +514,49 @@ body {
 }
 
 /*KEYFRAMES ANIMATTION*/
+
+@keyframes logoLeft {
+    0% {
+        transform: translateX(1px);
+    }
+
+    50%{
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(1px);
+    }
+}
+
+@keyframes logoRight {
+    0% {
+        transform: translateX(-1px);
+    }
+
+    50%{
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(-1px);
+    }
+}
+
+@keyframes logoUp {
+    0% {
+        transform: translateY(2px);
+    }
+
+    50%{
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(2px);
+    }
+}
+
 @keyframes slideRight {
     0% {
         transform: translateX(-100px);
