@@ -41,7 +41,7 @@ body {
 
 .logo p:nth-of-type(1) {
     position: relative;
-    left: 20px;
+    left: 10px;
     animation: logoLeft 2s infinite;
     animation-delay: 1s;
 }
@@ -55,7 +55,7 @@ body {
 
 .logo p:nth-of-type(3) {
     position: relative;
-    right: 20px;
+    right: 10px;
     animation: logoRight 2s infinite;
     animation-delay: 1s;
 }
@@ -416,19 +416,17 @@ body {
 .contact-content {
     max-width: 100%;
     justify-content: space-between;
-}
-
-.contact-box {
-    max-width: 100%;
-    justify-content: space-between;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-info,
 .social-links {
-    flex-basis: 48%; /* Pour définir la largeur de chaque bloc */
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Pour centrer horizontalement */
 }
+
 
 .contact-info {
     margin-right: 2%; /* Pour ajouter un espace entre les blocs */
@@ -443,7 +441,7 @@ body {
 .contact-content h1 {
     font-size: 56px;
     font-weight: 700;
-    margin: -3px 0;
+    margin: -3px 0 20px 0;
     opacity: 0;
 }
 
