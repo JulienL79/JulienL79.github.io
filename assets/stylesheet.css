@@ -333,7 +333,7 @@ body {
 
 .section.actif .skills-content .skills p {
     animation: slideTop 1s ease forwards;
-    animation-delay: calc(.3s * var(--i) + 1s);
+    animation-delay: calc(.2s * var(--i) + .7s);
 }
 
 .section.actif .skills-content .skills p:hover {

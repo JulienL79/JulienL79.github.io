@@ -1,6 +1,6 @@
 var portfolioElem=document.getElementById("portfolio");
 var portfolioClass=portfolioElem.className;
-if (portfolioClass="section actif") {
+if (portfolioClass === "section actif") {
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -36,6 +36,12 @@ document.addEventListener('DOMContentLoaded', function() {
     toggleWorkLinks(0); // Démarre le processus en faisant apparaître les liens
 });
 
+} else {
+    const workLinks = document.querySelectorAll('.workLink');
+    workLinks.forEach(link => {
+        link.classList.remove('active');
+    });
+    index = 0;
 }
 
 let typing = false; // Ajoutez cette variable pour suivre l'état de l'effet de frappe
