@@ -415,10 +415,7 @@ body {
 
 .contact-content {
     max-width: 100%;
-    display: flex;
-    flex-wrap: wrap; /* Permettre aux éléments de passer à la ligne si nécessaire */
     justify-content: space-between;
-    align-items: flex-start; /* Pour aligner les éléments en haut */
 }
 
 .contact-info,
