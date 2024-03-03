@@ -415,9 +415,9 @@ body {
 
 .contact-content {
     max-width: 100%;
-    justify-content: space-between;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .contact-info,
@@ -427,22 +427,12 @@ body {
     justify-content: center; /* Pour centrer horizontalement */
 }
 
-
-.contact-info {
-    margin-right: 2%; /* Pour ajouter un espace entre les blocs */
-}
-
-.social-links {
-    max-width: 50%;
-    display: flex;
-    flex-direction: column;
-}
-
 .contact-content h1 {
     font-size: 56px;
     font-weight: 700;
     margin: -3px 0 20px 0;
     opacity: 0;
+    justify-content: left;
 }
 
 .section.actif .contact-content h1 {
