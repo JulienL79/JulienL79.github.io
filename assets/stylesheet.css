@@ -358,7 +358,6 @@ body {
 
 .section.actif .skills-content .skills p:hover {
     animation: slideUpdown 1s infinite;
-    animation-delay: .2s;
 }
 
 /* Contenu PORTFOLIO ---------------------------------------------------------- */
