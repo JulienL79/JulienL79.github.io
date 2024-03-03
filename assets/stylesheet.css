@@ -49,7 +49,7 @@ body {
 .logo p:nth-of-type(2) {
     position: relative;
     bottom: 8px;
-    animation: logoUp 2s infinite;
+    animation: logoUp 4s infinite;
     animation-delay: 1s;
 }
 
@@ -413,6 +413,15 @@ body {
 
 /* Contenu CONTACT -------------------------------------------------------------- */
 
+#contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-contact {
+    align-self: flex-start;
+}
+
 .header-contact h1 {
     font-size: 56px;
     font-weight: 700;
@@ -420,7 +429,7 @@ body {
     opacity: 0;
 }
 
-.section.actif .haeder-contact h1 {
+.section.actif .header-contact h1 {
     animation: slideRight 1s ease forwards;
     animation-delay: .7s;
 }
@@ -512,8 +521,16 @@ body {
         transform: translateX(0);
     }
 
+    25%{
+        transform: translateX(-10px);
+    }
+
     50%{
-        transform: translateX(-15px);
+        transform: translateX(0);
+    }
+
+    75%{
+        transform: translateX(-10px);
     }
 
     100% {
@@ -527,7 +544,7 @@ body {
     }
 
     50%{
-        transform: translateX(15px);
+        transform: translateX(10px);
     }
 
     100% {
@@ -541,7 +558,7 @@ body {
     }
 
     50%{
-        transform: translateY(-10px);
+        transform: translateY(10px);
     }
 
     100% {
