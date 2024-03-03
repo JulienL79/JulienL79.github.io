@@ -40,16 +40,22 @@ body {
 }
 
 .logo p:nth-of-type(1) {
+    position: relative;
+    right: 3px;
     animation: logoLeft 2s infinite;
     animation-delay: 1s;
 }
 
 .logo p:nth-of-type(2) {
+    position: relative;
+    top: 3px;
     animation: logoUp 2s infinite;
     animation-delay: 1s;
 }
 
 .logo p:nth-of-type(3) {
+    position: relative;
+    left: 3px;
     animation: logoRight 2s infinite;
     animation-delay: 1s;
 }
@@ -517,7 +523,7 @@ body {
 
 @keyframes logoLeft {
     0% {
-        transform: translateX(1px);
+        transform: translateX(0);
     }
 
     50%{
@@ -525,13 +531,13 @@ body {
     }
 
     100% {
-        transform: translateX(1px);
+        transform: translateX(0);
     }
 }
 
 @keyframes logoRight {
     0% {
-        transform: translateX(-1px);
+        transform: translateX(0);
     }
 
     50%{
@@ -539,21 +545,21 @@ body {
     }
 
     100% {
-        transform: translateX(-1px);
+        transform: translateX(0);
     }
 }
 
 @keyframes logoUp {
     0% {
-        transform: translateY(2px);
+        transform: translateY(0);
     }
 
     50%{
-        transform: translateY(5px);
+        transform: translateY(-5px);
     }
 
     100% {
-        transform: translateY(2px);
+        transform: translateY(0);
     }
 }
 
