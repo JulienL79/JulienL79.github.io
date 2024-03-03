@@ -41,7 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
     workLinks.forEach(link => {
         link.classList.remove('active');
     });
-    index = 0;
 }
 
 let typing = false; // Ajoutez cette variable pour suivre l'état de l'effet de frappe
