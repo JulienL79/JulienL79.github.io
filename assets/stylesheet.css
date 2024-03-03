@@ -48,7 +48,7 @@ body {
 
 .logo p:nth-of-type(2) {
     position: relative;
-    bottom: 2px;
+    bottom: 5px;
     animation: logoUp 6s infinite;
     animation-delay: 1s;
 }
@@ -413,6 +413,14 @@ body {
 
 /* Contenu CONTACT -------------------------------------------------------------- */
 
+#home {
+    flex-direction: column;
+}
+
+.header-contact {
+    max-width: 600px;
+}
+
 .header-contact h1 {
     font-size: 56px;
     font-weight: 700;
@@ -428,13 +436,13 @@ body {
 .mailLinkedIn,
 .phoneInstagram,
 .homeGithub {
+    max-width: 600px;
     opacity: 0;
 }
 
 .mailLinkedIn a,
 .phoneInstagram a,
 .homeGithub a {
-    display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 40px;
