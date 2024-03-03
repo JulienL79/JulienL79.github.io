@@ -436,13 +436,14 @@ body {
 
 .contact-content {
     display: flex;
-    justify-content: left;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .contact-info,
 .social-links {
     flex: 1;
-    margin-right: 20px;
+    max-width: 48%;
 }
 
 .contact-content .mailAddress a,
