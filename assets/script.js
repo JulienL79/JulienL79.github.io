@@ -72,7 +72,6 @@ let sections = document.querySelectorAll('.section');
       // Check if section is in viewport
       if (sectionTop < window.innerHeight && sectionBottom >= 0) {
         section.classList.add('actif');
-        toggleWorkLinks(0); // Démarre le processus en faisant apparaître les liens
       } else {
         section.classList.remove('actif');
       }
@@ -85,9 +84,6 @@ let sections = document.querySelectorAll('.section');
 
 document.addEventListener('DOMContentLoaded', function() {
 
-    /*var portfolioElem=document.getElementById("portfolio");
-    var portfolioClass=portfolioElem.className;
-    if (portfolioClass === "section actif") {*/
 
     const workLinks = document.querySelectorAll('.workLink');
     const delay = 1000; // Durée entre chaque apparition/disparition de lien
@@ -118,11 +114,17 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    /*} else {
-    const workLinks = document.querySelectorAll('.workLink');
-    workLinks.forEach(link => {
-        link.classList.remove('active');
-    });
-    }*/
+    let sectionSkills = document.querySelectorAll('#skills');
+
+  function checkViewport2() {
+      let sectionTop = sectionSkills.getBoundingClientRect().top;
+      let sectionBottom = sectionSkills.getBoundingClientRect().bottom;
+
+      // Check if section is in viewport
+      if (sectionTop < window.innerHeight && sectionBottom >= 0) {
+        toggleWorkLinks(0); // Démarre le processus en faisant apparaître les liens
+      };
+  }
+  window.addEventListener('scroll', checkViewport2);
 });
 
