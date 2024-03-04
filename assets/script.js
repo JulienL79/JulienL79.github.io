@@ -56,9 +56,9 @@ const words = ["Développeur Web", "Militaire", "Comptable"];
 const multipleTextElem = document.querySelector(".multiple-text");
 typeWriterEffect(words, multipleTextElem);
 
-const words = ["Work", "Work in", "Work in Progress"];
+const newWords = ["Work", "Work in", "Work in Progress"];
 const workTextElem = document.querySelector(".workTest");
-typeWriterEffect(words, workTextElem);
+typeWriterEffect(newWords, workTextElem);
 
 //pour faire apparaître les sections au fur et à mesure
 
