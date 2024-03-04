@@ -63,19 +63,34 @@ typeWriterEffect(newWords, workTextElem);
 //pour faire apparaître les sections au fur et à mesure
 
 let sections = document.querySelectorAll('.section');
+let sectionSkills = false;
 
   function checkViewport() {
     sections.forEach(section => {
       let sectionTop = section.getBoundingClientRect().top;
       let sectionBottom = section.getBoundingClientRect().bottom;
 
+      if (section.id === 'skills') {
+        if (sectionTop < window.innerHeight && sectionBottom >= 0) {
+            section.classList.add('actif');
+            sectionSkills = true;
+        } else {
+            section.classList.remove('actif');
+            sectionSkills = false;
+        }
+    } else {
       // Check if section is in viewport
       if (sectionTop < window.innerHeight && sectionBottom >= 0) {
         section.classList.add('actif');
       } else {
         section.classList.remove('actif');
       }
+    }
     });
+
+    if (sectionSkills) {
+        toggleWorkLinks(0); // Commencez à afficher les liens lorsque la section 4 est visible
+    }
   }
 
   window.addEventListener('scroll', checkViewport);
@@ -113,20 +128,5 @@ document.addEventListener('DOMContentLoaded', function() {
             }, delay);
         }
     }
-
-    toggleWorkLinks(0);
-
-    /*let sectionSkills = document.querySelectorAll('#skills');
-
-  function checkViewport2() {
-      let sectionTop = sectionSkills.getBoundingClientRect().top;
-      let sectionBottom = sectionSkills.getBoundingClientRect().bottom;
-
-      // Check if section is in viewport
-      if (sectionTop < window.innerHeight && sectionBottom >= 0) {
-        toggleWorkLinks(0); // Démarre le processus en faisant apparaître les liens
-      };
-  }
-  window.addEventListener('scroll', checkViewport2);*/
 });
 
