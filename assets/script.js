@@ -75,12 +75,14 @@ let sections = document.querySelectorAll('.section');
 
   window.addEventListener('scroll', checkViewport);
 
-var portfolioElem=document.getElementById("portfolio");
-var portfolioClass=portfolioElem.className;
-if (portfolioClass === "section actif") {
-
+//faire apparaître les liens portfolios
 
 document.addEventListener('DOMContentLoaded', function() {
+
+    var portfolioElem=document.getElementById("portfolio");
+    var portfolioClass=portfolioElem.className;
+    if (portfolioClass === "section actif") {
+
     const workLinks = document.querySelectorAll('.workLink');
     const delay = 1000; // Durée entre chaque apparition/disparition de lien
 
@@ -111,11 +113,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     toggleWorkLinks(0); // Démarre le processus en faisant apparaître les liens
-});
 
-} else {
+    } else {
     const workLinks = document.querySelectorAll('.workLink');
     workLinks.forEach(link => {
         link.classList.remove('active');
     });
-}
+    }
+});
+

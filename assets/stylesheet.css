@@ -413,6 +413,10 @@ body {
 
 /* Contenu CONTACT -------------------------------------------------------------- */
 
+#contact {
+    display: block;
+}
+
 .header-contact {
     display: block;
     text-align: left;
@@ -435,6 +439,7 @@ body {
 .phoneInstagram,
 .homeGithub {
     display: block;
+    width: 100%;
     margin-bottom: 20px;
     opacity: 0;
 }
