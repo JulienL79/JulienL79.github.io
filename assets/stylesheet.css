@@ -48,7 +48,7 @@ body {
 
 .logo p:nth-of-type(2) {
     position: relative;
-    bottom: 5px;
+    bottom: 4px;
     animation: logoUp 6s infinite;
     animation-delay: 1s;
 }
@@ -347,6 +347,7 @@ body {
     font-size: 50px;
     color: #D19A66;
     text-decoration: none;
+    cursor: default;
     margin: 30px 15px 30px 0;
     opacity: 0;
 }
