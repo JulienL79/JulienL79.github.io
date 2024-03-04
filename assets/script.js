@@ -1,11 +1,11 @@
 
 let typing = false; // Ajoutez cette variable pour suivre l'état de l'effet de frappe
 
-function typeWriterEffect(words, index = 0) {
+function typeWriterEffect(words, targetElement, index = 0) {
     if (typing) return; // Vérifiez si l'effet de frappe est déjà en cours
 
     typing = true; // Marquez que l'effet de frappe a commencé
-    const textElement = document.querySelector(".multiple-text");
+    const textElement = targetElement;
     const cursorElement = document.querySelector(".cursor");
     const currentWord = words[index];
     let i = 0;
@@ -53,7 +53,12 @@ function typeWriterEffect(words, index = 0) {
 
 // Exemple d'utilisation avec des mots
 const words = ["Développeur Web", "Militaire", "Comptable"];
-typeWriterEffect(words);
+const multipleTextElem = document.querySelector(".multiple-text");
+typeWriterEffect(words, multipleTextElem);
+
+const words = ["Work", "Work in", "Work in Progress"];
+const workTextElem = document.querySelector(".workTest");
+typeWriterEffect(words, workTextElem);
 
 //pour faire apparaître les sections au fur et à mesure
 
