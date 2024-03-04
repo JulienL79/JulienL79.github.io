@@ -47,7 +47,7 @@ function typeWriterEffect(words, targetElement, index = 0) {
         .then(() => {
             typing = false; // Marquez que l'effet de frappe est terminé
             // Passer au mot suivant après un délai
-            typeWriterEffect(words, (index + 1) % words.length);
+            typeWriterEffect(words, targetElement, (index + 1) % words.length);
         });
 }
 

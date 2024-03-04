@@ -485,6 +485,8 @@ body {
 #contact p {
     display: inline-flex;
     vertical-align: middle;
+    justify-content: center;
+    align-items: center;
     height: 40px;
     width: 300px;
     font-size: 16px;
