@@ -407,19 +407,15 @@ body {
     transition: opacity 1s ease-in-out;
 }
 
-.section.actif .portfolio-content .workLink.active {
+.section.actif .portfolio-content .work .workLink.active {
     opacity: 1;
 }
 
 /* Contenu CONTACT -------------------------------------------------------------- */
 
-#contact {
-    display: flex;
-    flex-direction: column;
-}
-
 .header-contact {
     align-self: flex-start;
+    width: 100%;
 }
 
 .header-contact h1 {
@@ -434,25 +430,22 @@ body {
     animation-delay: .7s;
 }
 
-.contact-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.mailLinkedIn,
+.phoneInstagram,
+.homeGithub {
+    opacity: 0;
 }
 
-.contact-info,
-.social-links {
-    flex: 1;
-    max-width: 48%;
+.section.actif .mailLinkedIn,
+.section.actif .phoneInstagram,
+.section.actif .homeGithub {
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
 }
 
-.contact-content .mailAddress a,
-.contact-content .phoneNumber a,
-.contact-content .homeLocation a,
-.contact-content .linkedIn a,
-.contact-content .instragram a,
-.contact-content .github a {
-    display: inline-flex;
+.mailLinkedIn a,
+.phoneInstagram a,
+.homeGithub a {
     justify-content: center;
     align-items: center;
     width: 40px;
@@ -465,25 +458,14 @@ body {
     text-decoration: none;
     margin: 15px 30px 15px 0;
     transition: .5s ease;
-    opacity: 0;
 }
 
-.section.actif .contact-content a {
-    animation: slideRight 1s ease forwards;
-    animation-delay: 1s;
-}
-
-.contact-content p {
+#contact p {
     display: inline-block;
     font-size: 16px;
     text-align: justify;
     margin-top: 30px;
     opacity: 0;
-}
-
-.section.actif .contact-content p {
-    animation: slideTop 1s ease forwards;
-    animation-delay: 1s;
 }
 
 /* Définition couleur codage ------------------------------------------------- */
