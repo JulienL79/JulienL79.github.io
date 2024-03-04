@@ -414,7 +414,8 @@ body {
 /* Contenu CONTACT -------------------------------------------------------------- */
 
 .header-contact {
-    align-self: flex-start;
+    display: block;
+    text-align: left;
     width: 100%;
 }
 
@@ -433,6 +434,8 @@ body {
 .mailLinkedIn,
 .phoneInstagram,
 .homeGithub {
+    display: block;
+    margin-bottom: 20px;
     opacity: 0;
 }
 
@@ -465,7 +468,6 @@ body {
     font-size: 16px;
     text-align: justify;
     margin-top: 30px;
-    opacity: 0;
 }
 
 /* Définition couleur codage ------------------------------------------------- */
