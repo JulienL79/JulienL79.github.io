@@ -114,7 +114,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    let sectionSkills = document.querySelectorAll('#skills');
+    toggleWorkLinks(0);
+
+    /*let sectionSkills = document.querySelectorAll('#skills');
 
   function checkViewport2() {
       let sectionTop = sectionSkills.getBoundingClientRect().top;
@@ -125,6 +127,6 @@ document.addEventListener('DOMContentLoaded', function() {
         toggleWorkLinks(0); // Démarre le processus en faisant apparaître les liens
       };
   }
-  window.addEventListener('scroll', checkViewport2);
+  window.addEventListener('scroll', checkViewport2);*/
 });
 
