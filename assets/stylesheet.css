@@ -479,11 +479,13 @@ body {
     color: #D19A66;
     text-decoration: none;
     transition: .5s ease;
+    margin-right: 20px;
 }
 
 #contact p {
     display: inline-flex;
     vertical-align: middle;
+    height: 40px;
     width: 300px;
     font-size: 16px;
     font-weight: 400;
