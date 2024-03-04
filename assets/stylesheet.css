@@ -443,13 +443,22 @@ body {
     height: 50px;
     vertical-align: center;
     opacity: 0;
+    margin: 15px 0 15px 0;
 }
 
-.section.actif .mailLinkedIn,
-.section.actif .phoneInstagram,
-.section.actif .homeGithub {
+.section.actif .mailLinkedIn {
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.section.actif .phoneInstagram {
     animation: slideRight 1s ease forwards;
     animation-delay: 1s;
+}
+
+.section.actif .homeGithub {
+    animation: slideTop 1s ease forwards;
+    animation-delay: 1.2s;
 }
 
 .mailLinkedIn a,
