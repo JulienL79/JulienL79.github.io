@@ -72,6 +72,7 @@ let sections = document.querySelectorAll('.section');
       // Check if section is in viewport
       if (sectionTop < window.innerHeight && sectionBottom >= 0) {
         section.classList.add('actif');
+        toggleWorkLinks(0); // Démarre le processus en faisant apparaître les liens
       } else {
         section.classList.remove('actif');
       }
@@ -116,8 +117,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }, delay);
         }
     }
-
-    toggleWorkLinks(0); // Démarre le processus en faisant apparaître les liens
 
     /*} else {
     const workLinks = document.querySelectorAll('.workLink');
