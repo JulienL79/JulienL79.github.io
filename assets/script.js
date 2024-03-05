@@ -73,7 +73,10 @@ let sectionSkills = false;
       if (section.id === 'skills') {
         if (sectionTop < window.innerHeight && sectionBottom >= 0) {
             section.classList.add('actif');
-            sectionSkills = true;
+            if (!sectionSkills) {
+                toggleWorkLinks(0); // Commencez à afficher les liens lorsque la section 4 est visible
+                sectionSkills = true;
+            }
         } else {
             section.classList.remove('actif');
             sectionSkills = false;
@@ -88,9 +91,6 @@ let sectionSkills = false;
     }
     });
 
-    if (sectionSkills) {
-        toggleWorkLinks(0); // Commencez à afficher les liens lorsque la section 4 est visible
-    }
   }
 
   window.addEventListener('scroll', checkViewport);

@@ -409,7 +409,7 @@ body {
     transition: opacity 1s ease-in-out;
 }
 
-.section.actif .portfolio-content .work .workLink.active {
+.section.actif .portfolio-content .workLink.active {
     opacity: 1;
 }
 
