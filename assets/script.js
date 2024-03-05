@@ -1,7 +1,9 @@
 
-let typing = false; // Ajoutez cette variable pour suivre l'état de l'effet de frappe
+document.addEventListener('DOMContentLoaded', function() {
 
-function typeWriterEffect(words, targetElement, index = 0) {
+    let typing = false; // Ajoutez cette variable pour suivre l'état de l'effet de frappe
+
+    function typeWriterEffect(words, targetElement, index = 0) {
     if (typing) return; // Vérifiez si l'effet de frappe est déjà en cours
 
     typing = true; // Marquez que l'effet de frappe a commencé
@@ -95,10 +97,7 @@ let sectionSkills = false;
 
   window.addEventListener('scroll', checkViewport);
 
-//faire apparaître les liens portfolios
-
-document.addEventListener('DOMContentLoaded', function() {
-
+  //faire apparaître les liens portfolios
 
     const workLinks = document.querySelectorAll('.workLink');
     const delay = 1000; // Durée entre chaque apparition/disparition de lien
