@@ -54,9 +54,9 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 // Exemple d'utilisation avec des mots
-const words = ["Développeur Web", "Militaire", "Comptable"];
+const wordsOne = ["Développeur Web", "Militaire", "Comptable"];
 const multipleTextElem = document.querySelector(".multiple-text");
-typeWriterEffect(words, multipleTextElem);
+typeWriterEffect(wordsOne, multipleTextElem);
 
 const newWords = ["Work", "Work in", "Work in Progress"];
 const workTextElem = document.querySelector(".workTest");
@@ -82,6 +82,9 @@ let sectionSkills = false;
         } else {
             section.classList.remove('actif');
             sectionSkills = false;
+            workLinks.forEach(link => {
+                link.classList.remove('active');
+            });
         }
     } else {
       // Check if section is in viewport

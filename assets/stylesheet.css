@@ -354,21 +354,14 @@ body {
 }
 
 .section.actif .skills-content .skills p {
-    animation: slideTopAnimation 1s ease forwards;
+    animation: slideTop 1s ease forwards;
     animation-delay: calc(.2s * var(--i) + .5s);
 }
 
 .section.actif .skills-content .skills p:hover {
-    animation: slideUpdownAnimation 1s ease forwards;
+    animation: slideUpdown 1s ease forwards;
 }
 
-.slideTopAnimation {
-    animation-name: slideTop;
-}
-
-.slideUpdownAnimation {
-    animation-name: slideUpdown;
-}
 
 /* Contenu PORTFOLIO ---------------------------------------------------------- */
 
