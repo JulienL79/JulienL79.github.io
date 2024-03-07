@@ -198,7 +198,7 @@ let sections = document.querySelectorAll('.section');
 
 //------
 // Exemple d'utilisation avec des mots
-const wordsOne = ["Développeur Web", "Militaire", "Comptable"];
+/*const wordsOne = ["Développeur Web", "Militaire", "Comptable"];
 const wordsTwo = ["Work", "Work in", "Work in Progress"];
 
 const multipleTextElem = document.querySelector(".multiple-text");
@@ -256,4 +256,4 @@ function typeWriterEffect(words, targetElement, index = 0) {
       typing = false;
       typeWriterEffect(words, targetElement, (index + 1) % words.length);
     });
-}
+}*/
