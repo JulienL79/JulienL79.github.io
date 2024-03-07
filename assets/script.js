@@ -55,7 +55,9 @@ function typeWriterEffect(words, targetElement, index = 0) {
   }
 
   new Promise(resolve => typeCharacter(resolve))
-    .then(() => new Promise(resolve => setTimeout(() => eraseCharacter(resolve), 1000)))
+    .then(() => new Promise(resolve => setTimeout(() => {
+      eraseCharacter(resolve);
+    }, 1000)))
     .then(() => {
       typing = false;
       typeWriterEffect(words, targetElement, (index + 1) % words.length);
