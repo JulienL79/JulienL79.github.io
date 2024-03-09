@@ -185,14 +185,12 @@ body {
 }
 
 .home-content p:nth-of-type(2),
-.home-content p:nth-of-type(4),
-.home-content p:nth-of-type(5),
-.home-content p:nth-of-type(7) {
+.home-content p:nth-of-type(4) {
     margin-left: 20px;
 }
 
 .home-content p:nth-of-type(3),
-.home-content p:nth-of-type(6) {
+.home-content p:nth-of-type(5) {
     margin-left: 40px;
 }
 
