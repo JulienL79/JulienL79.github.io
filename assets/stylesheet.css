@@ -257,11 +257,6 @@ body {
     animation-delay: 2s, 3s;
 }
 
-/*.home-img img:hover {
-    animation: zoomHover 0.5 ease forwards;
-    animation-delay: .2s;
-}*/
-
 /* Contenu ABOUT ----------------------------------------------------------------*/
 
 .about-content {
