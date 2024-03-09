@@ -260,7 +260,7 @@ body {
 /* Contenu ABOUT ----------------------------------------------------------------*/
 
 .about-content {
-    max-width: 600px;
+    max-width: 80%;
 }
 
 .about-content h1 {
