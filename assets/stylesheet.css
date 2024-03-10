@@ -18,7 +18,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10%;
+    padding: 1.5em 10%;
     background: #333333;
     display: flex;
     justify-content: space-between;
@@ -27,7 +27,7 @@ body {
 }
 
 .logo {
-    font-size: 25px;
+    font-size: 1.5em;
     color: #F2F2F2;
     text-decoration: none;
     font-weight: 600;
@@ -41,14 +41,14 @@ body {
 
 .logo p:nth-of-type(1) {
     position: relative;
-    left: 5px;
+    left: 0.31em;
     animation: logoRight 2s infinite;
     animation-delay: 1s;
 }
 
 .logo p:nth-of-type(2) {
     position: relative;
-    bottom: 3px;
+    bottom: 0.125em;
     font-weight: 700;
     animation: logoUp 6s infinite;
     animation-delay: 1s;
@@ -56,7 +56,7 @@ body {
 
 .logo p:nth-of-type(3) {
     position: relative;
-    right: 5px;
+    right: 0.31em;
     animation: logoLeft 2s infinite;
     animation-delay: 1s;
 }
@@ -83,11 +83,11 @@ body {
 
 .navbar a {
     display: inline-block;
-    font-size: 18px;
+    font-size: 1.2em;
     color: #F2F2F2;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 35px;
+    margin-left: 2em;
     transition-delay: .1s;
     opacity: 0;
     animation: slideTop .5s ease forwards;
@@ -107,18 +107,17 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 70px 10% 0;
+    padding: 4em 10% 0;
     opacity: 1;
 }
 
 .section {
     position: relative;
-    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 70px 10% 0;
+    padding: 4em 10% 0;
     opacity: 0;
 }
 
@@ -127,20 +126,20 @@ body {
 }
 
 .home-content {
-    max-width: 600px;
+    max-width: 60%;
 }
 
 .home-content h1 {
-    font-size: 56px;
+    font-size: 3.5em;
     font-weight: 700;
-    margin: -3px 0;
+    margin: -0.19em 0;
     opacity: 0;
     animation: slideRight 1s ease forwards;
     animation-delay: 1s;
 }
 
 .home-content h3 {
-    font-size: 32px;
+    font-size: 2em;
     font-weight: 700;
     opacity: 0;
     animation: slideBottom 1s ease forwards;
@@ -148,7 +147,7 @@ body {
 }
 
 .home-content h3:nth-last-of-type(1) {
-    margin-bottom: 15px;
+    margin-bottom: 1em;
     animation: slideTop 1s ease forwards;
     animation-delay: .7s;
 }
@@ -159,7 +158,7 @@ body {
 
 .cursor {
     display: inline-block;
-    width: 4px;
+    width: 0.25em;
     height: 1em;
     background-color: #F2F2F2;
     vertical-align: middle;
@@ -167,11 +166,11 @@ body {
 }
 
 .home-content p {
-    font-size: 16px;
+    font-size: 1em;
     text-align: justify;
     font-weight: 500;
     opacity: 0;
-    margin: 1px 0 0 0;
+    margin: 0.06em 0 0 0;
 }
 
 .home-content p:nth-of-type(2n+1) {
@@ -186,12 +185,12 @@ body {
 
 .home-content p:nth-of-type(2),
 .home-content p:nth-of-type(4) {
-    margin-left: 20px;
+    margin-left: 1.5em;
 }
 
 .home-content p:nth-of-type(3),
 .home-content p:nth-of-type(5) {
-    margin-left: 40px;
+    margin-left: 2.5em;
 }
 
 .social-media a:nth-child(1) {
@@ -210,15 +209,15 @@ body {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 2.5em;
+    height: 2.5em;
     background: transparent;
-    border: 2px solid #D19A66;
+    border: 0.125em solid #D19A66;
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 1.4em;
     color: #D19A66;
     text-decoration: none;
-    margin: 25px 20px 25px 0;
+    margin: 1.5em 1.4em 1.5em 0;
     transition: .5s ease;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
@@ -228,18 +227,18 @@ body {
 .social-media a:hover {
     background: #D19A66;
     color: #333333;
-    box-shadow: 0 0 20px #D19A66;
+    box-shadow: 0 0 1.4em #D19A66;
 }
 
 .btn {
     display: inline-block;
-    padding: 12px 28px;
+    padding: 0.75em 2.5em;
     background: #D19A66;
-    border-radius: 40px;
-    box-shadow: 0 0 10px #D19A66;
-    font-size: 16px;
+    border-radius: 2.5em;
+    box-shadow: 0 0 0.62em #D19A66;
+    font-size: 1em;
     color: #333333;
-    letter-spacing: 1px;
+    letter-spacing: 0.06em;
     text-decoration: none;
     font-weight: 600;
     opacity: 0;
@@ -248,9 +247,9 @@ body {
 }
 
 .home-img img {
-    max-width: 400px;
-    margin-right: -20px;
-    box-shadow: 0 0 20px #D19A66;
+    max-width: 90%;
+    margin-right: -1.4em;
+    box-shadow: 0 0 1.4em #D19A66;
     border-radius: 50%;
     opacity: 0;
     animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
@@ -264,9 +263,9 @@ body {
 }
 
 .about-content h1 {
-    font-size: 56px;
+    font-size: 3.5em;
     font-weight: 700;
-    margin: -3px 0;
+    margin: -0.19em 0;
     opacity: 0;
 }
 
@@ -276,9 +275,9 @@ body {
 }
 
 .about-content p {
-    font-size: 16px;
+    font-size: 1em;
     text-align: justify;
-    margin-top: 30px;
+    margin-top: 2em;
     opacity: 0;
 }
 
@@ -294,9 +293,9 @@ body {
 }
 
 .skills-content h1 {
-    font-size: 56px;
+    font-size: 3.5em;
     font-weight: 700;
-    margin: -3px 0;
+    margin: -0.19em 0;
     opacity: 0;
 }
 
@@ -333,16 +332,16 @@ body {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 100px;
+    width: 2.5em;
+    height: 2.5em;
     background: transparent;
-    border: 2px solid #D19A66;
+    border: 0.05em solid #D19A66;
     border-radius: 50%;
-    font-size: 50px;
+    font-size: 3em;
     color: #D19A66;
     text-decoration: none;
     cursor: default;
-    margin: 30px 15px 30px 0;
+    margin: 1.5em 0.75em 1.5em 0;
     opacity: 0;
 }
 
@@ -354,7 +353,7 @@ body {
 .section.actif .skills-content .skills p:hover {
     background: #D19A66;
     color: #333333;
-    box-shadow: 0 0 20px #D19A66;
+    box-shadow: 0 0 1.4em #D19A66;
 }
 
 
@@ -365,15 +364,15 @@ body {
 }
 
 .portfolio-content h1 {
-    font-size: 56px;
+    font-size: 3.5em;
     font-weight: 700;
-    margin: -3px 0;
+    margin: -0.19em 0;
     opacity: 0;
 }
 
 #workDescribe h3 {
     color: #D19A66;
-    font-size: 32px;
+    font-size: 2em;
     font-weight: 700;
     opacity: 0;
 }
@@ -392,14 +391,14 @@ body {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 100px;
+    width: 2.5em;
+    height: 2.5em;
     background-color: #D19A66;
     border-radius: 50%;
-    font-size: 50px;
+    font-size: 3em;
     color: #333333;
     text-decoration: none;
-    margin: 30px 15px 30px 0;
+    margin: 1.5em 0.75em 1.5em 0;
     opacity: 0;
 }
 
@@ -441,9 +440,9 @@ body {
 }
 
 .header-contact h1 {
-    font-size: 56px;
+    font-size: 3.5em;
     font-weight: 700;
-    margin: -3px 0 40px 0;
+    margin: -0.19em 0 2.5em 0;
     opacity: 0;
 }
 
@@ -457,10 +456,10 @@ body {
 .homeGithub {
     display: flex;
     width: 100%;
-    height: 50px;
+    height: 3em;
     vertical-align: middle;
     opacity: 0;
-    margin: 15px 0 15px 0;
+    margin: 1em 0 1em 0;
 }
 
 .section.actif .mailLinkedIn {
@@ -485,16 +484,16 @@ body {
     vertical-align: middle;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 2.5em;
+    height: 2.5em;
     background: transparent;
-    border: 2px solid #D19A66;
+    border: 0.12em solid #D19A66;
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 1.4em;
     color: #D19A66;
     text-decoration: none;
     transition: .5s ease;
-    margin-right: 20px;
+    margin-right: 1.4em;
 }
 
 #contact p {
@@ -502,12 +501,19 @@ body {
     vertical-align: middle;
     justify-content: left ;
     align-items: center;
-    height: 40px;
-    width: 300px;
-    font-size: 16px;
+    height: 2.5em;
+    width: 20em;
+    font-size: 1em;
     font-weight: 400;
     text-align: justify;
-    margin-right: 30px;
+    margin-right: 2em;
+}
+
+
+.section.actif a:hover {
+    background: #D19A66;
+    color: #333333;
+    box-shadow: 0 0 1.4em #D19A66;
 }
 
 /* Définition couleur codage ------------------------------------------------- */
@@ -548,7 +554,7 @@ body {
     }
 
     50%{
-        transform: translateX(-10px);
+        transform: translateX(-0.3em);
     }
 
     100% {
@@ -562,7 +568,7 @@ body {
     }
 
     50%{
-        transform: translateX(10px);
+        transform: translateX(0.3em);
     }
 
     100% {
@@ -576,7 +582,7 @@ body {
     }
 
     25%{
-        transform: translateY(-15px);
+        transform: translateY(-0.5em);
     }
 
     50%{
@@ -584,7 +590,7 @@ body {
     }
 
     75%{
-        transform: translateY(-15px);
+        transform: translateY(-0.5em);
     }
 
     100% {
@@ -594,7 +600,7 @@ body {
 
 @keyframes slideRight {
     0% {
-        transform: translateX(-100px);
+        transform: translateX(-5em);
         opacity: 0;
     }
 
@@ -606,7 +612,7 @@ body {
 
 @keyframes slideTop {
     0% {
-        transform: translateY(100px);
+        transform: translateY(5em);
         opacity: 0;
     }
 
@@ -618,7 +624,7 @@ body {
 
 @keyframes slideBottom {
     0% {
-        transform: translateY(-100px);
+        transform: translateY(-5em);
         opacity: 0;
     }
 
@@ -630,7 +636,7 @@ body {
 
 @keyframes slideLeft {
     0% {
-        transform: translateX(100px);
+        transform: translateX(5em);
         opacity: 0;
     }
 
@@ -646,7 +652,7 @@ body {
     }
 
     50% {
-        transform: translateX(-16px);
+        transform: translateX(-1em);
     }
 
     100% {
@@ -656,15 +662,15 @@ body {
 
 @keyframes LeftRight {
     0% {
-        transform: translateX(0px);
+        transform: translateX(0);
     }
 
     50% {
-        transform: translateX(16px);
+        transform: translateX(1em);
     }
 
     100% {
-        transform: translateX(0px);
+        transform: translateX(0);
     }
 }
 
@@ -697,7 +703,7 @@ body {
     }
 
     50% {
-        transform: translateY(-24px);
+        transform: translateY(-1.5em);
     }
 
     100% {
@@ -737,3 +743,30 @@ body {
         opacity: 1;
     }
 }
+
+
+/* Small devices (vertical phones) */
+
+@media (max-width: 576px) {
+
+    body {width: 100%; margin: 0 auto;}
+    #home {flex-direction: column;}   
+    .home-content {max-width: 100%;}
+    .home-img {order:0;max-width: 50%;justify-content: center;} 
+    
+    }
+    
+    /* Small devices (landscape phones, 576px and up) */
+    
+    @media (min-width: 576px)and (max-width: 767px) {}
+    
+    /*  Medium devices (tablets, 768px and up) */
+    
+    @media (min-width: 768px) and (max-width: 991px) {
+    
+    body {width:90%;  margin: 0 auto; }
+    
+    .section {width:70%; float:left; }
+    
+    }
+    
