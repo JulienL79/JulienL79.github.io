@@ -758,24 +758,25 @@ body {
     .section h3 {font-size: 0.75em;}
     .section p {font-size: 0.4em;}
 
-    #home {flex-direction: column; padding: 8em 10%;}
+    #home {flex-direction: column; padding: 5em 10%;}
     .home-content {order:1; max-width: 100%;}
     .home-content h1 {font-size: 1.5em;}
     .home-content h3 {font-size: 0.75em;}
     .home-content p {font-size: 0.4em;}
-    .social-media a {width: 1.5em; height: 1.5em; font-size: 0.75em; margin: 0.5em 1em 0.5em 0;}
-    .btn {font-size: 0.7em; padding: 0.4em 1.2em;}
+    .social-media a {width: 2.5em; height: 2.5em; font-size: 1.2em; margin: 0.5em 1.5em 0.5em 0;}
+    .btn {font-size: 0.7em; padding: 0.5em 2.5em;}
     .home-img {order:0; max-width: 50%;justify-content: center; margin-bottom: 0.5em;} 
 
-    .skills p {width: 2.5em; height: 2.5em; font-size: 1.5em; margin: 0.5em 0.25em 0.5em 0;}
+    .skills p {width: 3em; height: 3em; font-size: 2.5em; margin: 1em 0.25em 0.5em 0;}
 
     .workLink {width: 2.5em; height: 2.5em; font-size: 1.5em; margin: 0.5em 0.25em 0.5em 0;}
+    .workLink:nth-of-type(4), .workLink:nth-of-type(5) {display:none;}
     .portfolio-text h3 {font-size: 0.75em;}
 
     .header-contact h1 {margin-bottom: 1em;}
     .mailLinkedIn, .phoneInstagram, .homeGithub {height: 1.5em; margin:0.3em 0 0.3em 0;}
-    .mailLinkedIn a, .phoneInstagram a, .homeGithub a {width: 1.2em; height: 1.2em; border: 0.04em solid #D19A66; font-size: 0.5em; margin-right: 0.5em;}
-    #contact p {height: 1.2em; width: 10em; font-size: 0.3em; margin-right: 0.7em;}
+    .mailLinkedIn a, .phoneInstagram a, .homeGithub a {width: 1.2em; height: 1.2em; border: 0.1em solid #D19A66; font-size: 1em; margin-right: 0.5em;}
+    #contact p {height: 1.2em; width: 20em; font-size: 0.5em; margin-right: 0.5em;}
     }
     
     /* Small devices (landscape phones, 576px and up) */
