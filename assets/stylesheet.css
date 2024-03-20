@@ -754,11 +754,11 @@ body {
     .header {font-size: 0.5em;} 
 
     .section {height: 100vh;}
-    .section h1 {font-size: 1.5em;}
-    .section h3 {font-size: 0.75em;}
-    .section p {font-size: 0.4em;}
+    .section h1 {font-size: 2em;}
+    .section h3 {font-size: 1em;}
+    .section p {font-size: 0.5em; font-weight: 500;}
 
-    #home {flex-direction: column; padding: 5em 10% 1em 0;}
+    #home {flex-direction: column;}
     .home-content {order:1; max-width: 100%;}
     .home-content h1 {font-size: 1.5em;}
     .home-content h3 {font-size: 0.75em;}
@@ -771,12 +771,12 @@ body {
 
     .workLink {width: 2.5em; height: 2.5em; font-size: 1.5em; margin: 0.5em 0.25em 0.5em 0;}
     .workLink:nth-of-type(4), .workLink:nth-of-type(5) {display:none;}
-    .portfolio-text h3 {font-size: 0.75em;}
+    #workDescribe {font-size: 1em;}
 
     .header-contact h1 {margin-bottom: 1em;}
-    .mailLinkedIn, .phoneInstagram, .homeGithub {height: 5em; margin:0.3em 0 0.3em 0;}
-    .mailLinkedIn a, .phoneInstagram a, .homeGithub a {width: 15%; height: 15%; border: 0.1em solid #D19A66; font-size: 1.5em; margin-right: 0.5em;}
-    #contact p {height: 1.2em; width: 80%; font-size: 0.5em; margin-right: 0.5em;}
+    .mailLinkedIn, .phoneInstagram, .homeGithub {height: 3em; margin:0.3em 0 0.3em 0;}
+    .mailLinkedIn a, .phoneInstagram a, .homeGithub a {width: 1.5em; height: 1.5em; border: 0.1em solid #D19A66; font-size: 2em; margin-right: 0.5em;}
+    #contact p {height: 1.2em; width: 80%; font-size: 1em; margin-right: 0.5em;}<
     }
     
     /* Small devices (landscape phones, 576px and up) */
