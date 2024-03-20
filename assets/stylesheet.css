@@ -765,7 +765,7 @@ body {
     .home-content p {font-size: 0.4em;}
     .social-media a {width: 2em; height: 2em; font-size: 1.2em; margin: 0.5em 1.5em 0.5em 0;}
     .btn {font-size: 0.7em; padding: 0.5em 2.5em;}
-    .home-img {order:0; max-width: 50%;justify-content: center; margin-bottom: 0.5em;} 
+    .home-img {order:0; max-width: 70%;justify-content: center; margin-bottom: 0.5em;} 
 
     .skills p {width: 2.5em; height: 2.5em; font-size: 2.5em; margin: 1em 0.25em 0.5em 0;}
 
@@ -775,8 +775,8 @@ body {
 
     .header-contact h1 {margin-bottom: 1em;}
     .mailLinkedIn, .phoneInstagram, .homeGithub {display:flex;height: 3em; margin:0.3em 0 0.3em 0;}
-    .mailLinkedIn a, .phoneInstagram a, .homeGithub a {display:flex; width: 2em; height: 2em; border: 0.1em solid #D19A66; font-size: 1.2em; margin-right: 0.5em;}
-    #contact p {display:flex; height: 1.2em; width: 25em; font-size: 1.2em; margin-right: 0.5em;}
+    .mailLinkedIn a, .phoneInstagram a, .homeGithub a {display:flex; width: 2em; height: 2em; font-size: 1.2em; margin-right: 0.5em;}
+    .mailLinkedIn p, .phoneInstagram p, .homeGithub p {display:flex; height: 1.2em; width: 90%; font-size: 1.2em; margin: 1em 3em;}
     }
     
     /* Small devices (landscape phones, 576px and up) */
