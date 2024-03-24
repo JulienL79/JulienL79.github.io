@@ -753,7 +753,7 @@ body {
     body {width: 100%; margin: 0 auto;}
     .header {font-size: 0.5em;} 
 
-    .section {height: 150vh;}
+    .section {height: 150vh;max-width: 100%;}
     .section h1 {font-size: 2.2em;}
     .section h3 {font-size: 1.2em;}
     .section p {font-size: 0.8em; font-weight: 500;}
@@ -764,19 +764,21 @@ body {
     .home-content h3 {font-size: 1em;}
     .home-content p {font-size: 0.70em;}
     .social-media a {width: 2.5em; height: 2.5em; font-size: 1.5em; margin: 0.5em 1em 0.5em 0;justify-content: center;}
-    .btn {font-size: 1em; padding: 0.5em 2.5em;max-width: 90%; justify-content: center;}
+    .btn {font-size: 1em; padding: 0.5em 2.5em;max-width: 100%; justify-content: center;}
     .home-img {order:0; max-width: 70%;justify-content: center;margin: 0 0 2em 0;} 
 
+    .skills-content {max-width: 100%;}
     .skills p {width: 2.5em; height: 2.5em; font-size: 2.5em; margin: 1em 0.25em 0.5em 0;}
 
+    .portfolio-content {max-width: 100%;}
     .workLink {width: 2.5em; height: 2.5em; font-size: 1.5em; margin: 0.5em 0.25em 0.5em 0;}
     .workLink:nth-of-type(4), .workLink:nth-of-type(5) {display:none;}
     #workIn {font-size: 1.2em;}
 
     .header-contact h1 {margin-bottom: 1em;}
     .mailLinkedIn, .phoneInstagram, .homeGithub {display:flex; flex-wrap: wrap;height: 3em; margin:0.3em 0 0.3em 0;}
-    .mailLinkedIn a, .phoneInstagram a, .homeGithub a {display:flex; flex-wrap:wrap; flex: 0 0 30% ;width: 2.5em; height: 2.5em; font-size: 1.5em; margin: 1em 1em 0.5em 0;}
-    .mailLinkedIn p, .phoneInstagram p, .homeGithub p {display:flex; flex-wrap:wrap; flex: 0 0 70%; height: 1.2em; font-size: 1.2em; margin: 1em 3em;}
+    .mailLinkedIn a, .phoneInstagram a, .homeGithub a {display:flex; flex-wrap:wrap; flex: 0 0 20% ;width: 2.5em; height: 2.5em; font-size: 1.5em; margin: 1em 1em 1em 0;}
+    .mailLinkedIn p, .phoneInstagram p, .homeGithub p {display:flex; flex-wrap:wrap; flex: 0 0 70%; height: 2.5em; font-size: 1em; margin: 1em 0 1em 0;}
     }
     
     /* Small devices (landscape phones, 576px and up) */
