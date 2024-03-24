@@ -758,24 +758,24 @@ body {
     .section h3 {font-size: 1.5em;}
     .section p {font-size: 0.75em; font-weight: 500;}
 
-    #home {flex-direction: column;padding: 2em 10% 0;}
+    #home {flex-direction: column;padding: 2em 10% 0;margin-top: 7em;}
     .home-content {order:1; max-width: 100%;}
-    .home-content h1 {font-size: 2.5em;}
-    .home-content h3 {font-size: 1.5em;}
+    .home-content h1 {font-size: 2.2em;}
+    .home-content h3 {font-size: 1.2em;}
     .home-content p {font-size: 0.75em;}
-    .social-media a {width: 2em; height: 2em; font-size: 1.2em; margin: 0.5em 1.5em 0.5em 0;}
-    .btn {font-size: 0.7em; padding: 0.5em 2.5em;}
+    .social-media a {width: 2.5em; height: 2.5em; font-size: 1.5em; margin: 0.5em 1.5em 0.5em 0;justify-content: space-between;}
+    .btn {font-size: 1em; padding: 0.5em 2.5em;max-width: 60%; justify-content: center;}
     .home-img {order:0; max-width: 70%;justify-content: center;} 
 
     .skills p {width: 2.5em; height: 2.5em; font-size: 2.5em; margin: 1em 0.25em 0.5em 0;}
 
     .workLink {width: 2.5em; height: 2.5em; font-size: 1.5em; margin: 0.5em 0.25em 0.5em 0;}
     .workLink:nth-of-type(4), .workLink:nth-of-type(5) {display:none;}
-    #workDescribe {font-size: 1em;}
+    #workIn {font-size: 1.2em;}
 
     .header-contact h1 {margin-bottom: 1em;}
     .mailLinkedIn, .phoneInstagram, .homeGithub {display:flex;height: 3em; margin:0.3em 0 0.3em 0;}
-    .mailLinkedIn a, .phoneInstagram a, .homeGithub a {display:flex; flex-wrap:wrap; width: 2.5em; height: 2.5em; font-size: 1.5em; margin-right: 0.5em;}
+    .mailLinkedIn a, .phoneInstagram a, .homeGithub a {display:flex; flex-wrap:wrap; width: 2.5em; height: 2.5em; font-size: 1.5em; margin: 1em 1em 0.5em 0;}
     .mailLinkedIn p, .phoneInstagram p, .homeGithub p {display:flex; flex-wrap:wrap; height: 1.2em; width: 20em; font-size: 1.2em; margin: 1em 3em;}
     }
     
