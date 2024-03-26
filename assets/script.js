@@ -1,6 +1,45 @@
 
 document.addEventListener('DOMContentLoaded', function() {
 
+  const navList = document.querySelector('.nav-list');
+  const container = document.querySelector('.navbar');
+  
+  let isTouching = false;
+  let startX;
+  let scrollLeft;
+  let hasMoved = false;
+  
+  // Fonction pour obtenir la position du toucher
+  function getTouchPosition(e) {
+    return e.touches ? e.touches[0].pageX : e.pageX;
+  }
+  
+  container.addEventListener('touchstart', handleTouchStart);
+  container.addEventListener('touchmove', handleTouchMove);
+  container.addEventListener('touchend', handleTouchEnd);
+  
+  function handleTouchStart(e) {
+    isTouching = true;
+    startX = getTouchPosition(e) - navList.offsetLeft;
+    scrollLeft = navList.scrollLeft;
+    hasMoved = false;
+  }
+  
+  function handleTouchMove(e) {
+    if (!isTouching) return;
+    e.preventDefault();
+    const x = getTouchPosition(e) - navList.offsetLeft;
+    const walk = (x - startX) * 3; // Vous pouvez ajuster ce coefficient pour changer la vitesse de défilement
+    navList.scrollLeft = scrollLeft - walk;
+    hasMoved = true;
+  }
+  
+  function handleTouchEnd() {
+    isTouching = false;
+    if (!hasMoved) return; // Ne pas effectuer de défilement si le déplacement est négligeable
+    hasMoved = false;
+  }
+
   let typing = false; // Ajoutez cette variable pour suivre l'état de l'effet de frappe
 
     function typeWriterEffect(words, targetElement, index = 0) {
