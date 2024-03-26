@@ -61,12 +61,17 @@ body {
     animation-delay: 1s;
 }
 
-.navbar {
-    overflow: hidden;
-}
-
 .nav-list {
     display: flex;
+    overflow-x: auto;
+}
+
+.nav-list::-webkit-scrollbar {
+    width: 0;
+}
+
+.nav-list::-webkit-scrollbar-corner {
+    background-color: transparent;
 }
 
 .nav-item:last-child {
