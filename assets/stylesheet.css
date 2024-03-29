@@ -69,7 +69,7 @@ body {
 
 .navbar {
     display: flex;
-    flex: 0 0 60%;
+    flex: 0 0 75%;
 }
 
 .nav-list {
