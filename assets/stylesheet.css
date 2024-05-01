@@ -82,23 +82,23 @@ body {
     margin-right: 0;
 }
 
-.nav-links ul:nth-child(1){
+.nav-links ul li:nth-of-type(1){
     --i: 1;
 }
 
-.nav-links ul:nth-child(2) {
+.nav-links ul li:nth-of-type(2) {
     --i: 2;
 }
 
-.nav-links ul:nth-child(3) {
+.nav-links ul li:nth-of-type(3) {
     --i: 3;
 }
 
-.nav-links ul:nth-child(4) {
+.nav-links ul li:nth-of-type(4) {
     --i: 4;
 }
 
-.nav-links ul:nth-child(5) {
+.nav-links ul li:nth-of-type(5) {
     --i: 5;
 }
 
@@ -395,7 +395,7 @@ body {
     opacity: 0;
 }
 
-#workDescribe h3 {
+#portfolio .portfolio-content .portfolio-text h3 {
     color: #D19A66;
     font-size: 2em;
     font-weight: 700;
@@ -847,7 +847,7 @@ body {
     .portfolio-content {max-width: 100%;}
     .workLink {width: 2.5em; height: 2.5em; font-size: 1.5em; margin: 0.5em 0.25em 0.5em 0;}
     .workLink:nth-of-type(4), .workLink:nth-of-type(5) {display:none;}
-    #workIn {font-size: 1.2em;}
+    #portfolio .portfolio-content .portfolio-text h3 {font-size: 1.2em;font-weight: 700;}
 
     .header-contact h1 {margin-bottom: 1em;}
     .contact-content {grid-template-columns: 4.5em 20em;grid-template-rows: 5em 5em 5em 5em 5em 5em;}  
