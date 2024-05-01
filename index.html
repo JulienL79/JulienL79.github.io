@@ -10,26 +10,29 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <header class ='header'>
-        <!--Bandeau du haut-->
-        <a href="#home" class="logo"><p>L</p><p>.</p><p>J</p></a>
+  
+    <!--Bandeau du haut-->
+    <nav class = 'navbar'>
 
-        <nav class ='navbar'>
-                <div class = 'nav-list'>
-                    <div class ='nav-item'><a href="#home" class="active">Accueil</a></div>
-                    <div class ='nav-item'><a href="#about">Qui suis-je?</a></div>
-                    <div class ='nav-item'><a href="#skills">Mes compétences</a></div>
-                    <div class ='nav-item'><a href="#portfolio">Portfolio</a></div>
-                    <div class ='nav-item'><a href="#contact">Coordonnées</a></div>
-                </div>
-        </nav>
+        <a href="#home" class="logo"><p>JL.</p></a>
+        
+        <div class = 'nav-links'>
+            <ul>
+                <li><a href="#home" class="active">Accueil</a></li>
+                <li><a href="#about">Qui suis-je?</a></li>
+                <li><a href="#skills">Mes compétences</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Coordonnées</a></li>
+            </ul>
+        </div>
+        <img src="assets/img/burger-button.png" class="menu-hamburger">
 
-
-    </header><!-- fin header 
+    </nav>
+ 
 
 
         
-    --><section class="section" id="home"><!--Section Accueil-->
+    <section class="section" id="home"><!--Section Accueil-->
             <div class="home-content">
                 <h3>Hey! Vous êtes sur le site de</h3>
                 <h1>Julien Loiseau</h1>
@@ -102,24 +105,20 @@
     <div class = "header-contact">
         <h1>Coordonnées</h1>
     </div>
-            <div class = "mailLinkedIn">
+        <div class="contact-content">
                 <a href="mailto:loiseau.julien79@gmail.com"><i class='bx bx-mail-send'></i></a>
                 <p>loiseau.julien79@gmail.com</p>
                 <a href="https://www.linkedin.com/in/julien-loiseau-148630174/"><i class='bx bxl-linkedin' ></i></a>
                 <p>LinkedIn</p>
-            </div>
-            <div class = "phoneInstagram">
                 <a href="callto:0674969827"><i class='bx bxs-phone' ></i></a>
                 <p>06 74 96 98 27</p>
                 <a href="https://www.instagram.com/julien_loiseau/"><i class='bx bxl-instagram'></i></a>
                 <p>Instagram</p>
-            </div>
-            <div class = "homeGithub">
                 <a href="https://maps.app.goo.gl/fcTPb5MCZQhxwgeU9"><i class='bx bxs-home'></i></a>
                 <p>Villedieu-la-Blouère | 49450</p>
                 <a href="https://github.com/JulienL79"><i class='bx bxl-github'></i></a>
                 <p>Github</p>
-            </div>
+        </div>
 </section>
 <script src="assets/script.js"></script>
 </body>

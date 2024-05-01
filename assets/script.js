@@ -119,3 +119,18 @@ let sections = document.querySelectorAll('.section');
   window.addEventListener('scroll', checkViewport);
 
 });
+
+const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+        const links = document.querySelectorAll(".nav-links a");
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+
+        links.forEach(link => {
+          link.addEventListener('click', () => {
+              // Enlève la classe 'mobile-menu' lorsque vous cliquez sur un lien
+              navLinks.classList.remove('mobile-menu');
+          });
+        });
