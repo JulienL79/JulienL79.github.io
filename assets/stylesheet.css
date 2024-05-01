@@ -783,7 +783,7 @@ body {
 
 /* Small devices (vertical phones) */
 
-@media (max-width: 576px) {
+@media (max-width: 1250px) {
 
     body {width: 100%; margin: 0 auto;}
 
@@ -798,7 +798,8 @@ body {
         top:0; 
         left:0;
         width: 100%;
-        height: 100vh;
+        height: 150vh;
+        -webkit-backdrop-filter: blur(7px);
         backdrop-filter: blur(7px);
         justify-content: center;
         margin-left:-100%;
@@ -807,7 +808,7 @@ body {
         }
 
     .nav-links ul {
-        margin-top: 350px;
+        margin-top: 500px;
         display:flex;
         flex-direction: column;
         align-items: center;
@@ -827,27 +828,14 @@ body {
         margin-left: 0;
     }    
 
-    .section {height: 150vh;max-width: 100%;}
-    .section h1 {font-size: 2.2em;}
-    .section h3 {font-size: 1.2em;}
-    .section p {font-size: 0.8em; font-weight: 500;}
-
-    #home {position: relative; height: 100vh;top:25px; flex-direction: column;padding: 2em 10% 0;margin-top: 4em;}
-    .home-content {order:1; max-width: 100%; margin-top: -3em;}
-    .home-content h1 {font-size: 2.2em;}
-    .home-content h3 {font-size: 1em;}
-    .home-content p {font-size: 0.70em;}
-    .social-media a {width: 2.5em; height: 2.5em; font-size: 1.5em; margin: 0.5em 1em 0.5em 0;justify-content: center;}
+    #home {position: relative; height: 120vh;top:25px; flex-direction: column;padding: 2em 10% 0;margin-top: 4em;margin-bottom: 300px;}
+    .home-content {order:1; max-width: 100%; margin-top: 3em;}
     .btn {font-size: 1em; padding: 0.5em 2.5em;max-width: 100%; justify-content: center; margin-top: 1em;}
-    .home-img {order:0; max-width: 80%;justify-content:center;align-items:end;margin: 0 0;padding: 0.5em 0.5em;} 
+    .home-img {order:0; max-width: 400px;justify-content:center;align-items:end;margin: 0 0;padding: 0.5em 0.5em;} 
 
     .skills-content {max-width: 100%;}
-    .skills p {width: 2.5em; height: 2.5em; font-size: 2.5em; margin: 1em 0.25em 0.5em 0;}
 
     .portfolio-content {max-width: 100%;}
-    .workLink {width: 2.5em; height: 2.5em; font-size: 1.5em; margin: 0.5em 0.25em 0.5em 0;}
-    .workLink:nth-of-type(4), .workLink:nth-of-type(5) {display:none;}
-    #portfolio .portfolio-content .portfolio-text h3 {font-size: 1.2em;font-weight: 700;}
 
     .header-contact h1 {margin-bottom: 1em;}
     .contact-content {grid-template-columns: 4.5em 20em;grid-template-rows: 5em 5em 5em 5em 5em 5em;}  
@@ -856,17 +844,44 @@ body {
 
 }
     
-    /* Small devices (landscape phones, 576px and up) */
-    
-    @media (min-width: 576px)and (max-width: 767px) {}
     
     /*  Medium devices (tablets, 768px and up) */
-    
-    @media (min-width: 768px) and (max-width: 991px) {
-    
-    body {width:90%;  margin: 0 auto; }
-    
-    .section {width:70%; float:left; }
-    
+
+    @media (max-width: 730px) {
+
+        .nav-links ul { margin-top: 350px};
+
+        #home {position: relative; height: 120vh;top:25px; flex-direction: column;padding: 2em 5% 0;margin-top: -3em;}
+        .home-content {order:1; max-width: 100%; margin-top: -5em;}
+        .home-content h1 {font-size: 2.2em;}
+        .home-content h3 {font-size: 1em;}
+        .home-content p {font-size: 0.70em;}
+
+        .section {height: 120vh;max-width: 100%;}
+        .section h1 {font-size: 2.2em;}
+        .section h3 {font-size: 1.2em;}
+        .section p {font-size: 0.8em; font-weight: 500;}
+
+        .social-media a {width: 2.5em; height: 2.5em; font-size: 1.5em; margin: 0.5em 1em 0.5em 0;justify-content: center;}
+
+        .skills p {width: 2.5em; height: 2.5em; font-size: 2.5em; margin: 1em 0.25em 0.5em 0;}
+
+        .workLink {width: 2.5em; height: 2.5em; font-size: 2.5em; margin: 1em 0.25em 0.5em 0;}
+        .workLink:nth-of-type(4), .workLink:nth-of-type(5) {display:none;}
+        #portfolio .portfolio-content .portfolio-text h3 {font-size: 1.2em;font-weight: 700;}
     }
     
+    /* Small devices (landscape phones, 576px and up) */
+    
+    @media (max-width: 470px) {
+        .home-content {position: relative; top: -5px;padding-top: -30px;}
+        .home-content h1 {font-size: 2em;}
+        .home-content h3 {font-size: 1em;}
+        .home-content p {font-size: 0.65em;}
+
+        .home-img {position: relative; left: 5%; right: 5%;bottom: -20px;padding-bottom: -50px;max-width: 300px;}
+
+        .skills p {width: 2.5em; height: 2.5em; font-size: 2em; margin: 1em 0.25em 0.5em 0;}
+
+        .workLink {width: 2.5em; height: 2.5em; font-size: 2em; margin: 1em 0.25em 0.5em 0;}
+    }
