@@ -44,7 +44,7 @@ body {
 
 .navbar .nav-links ul li {
     display: flex;
-    margin: 0 1em;
+    margin: 0 2px;
 }
 
 .navbar .logo {
@@ -55,28 +55,6 @@ body {
     opacity: 0;
     animation: slideRight 1s ease forwards;
 }
-
-/*.logo p:nth-of-type(1) {
-    position: relative;
-    left: 0.31em;
-    animation: logoRight 2s infinite;
-    animation-delay: 1s;
-}
-
-.logo p:nth-of-type(2) {
-    position: relative;
-    bottom: 0.125em;
-    font-weight: 700;
-    animation: logoUp 6s infinite;
-    animation-delay: 1s;
-}
-
-.logo p:nth-of-type(3) {
-    position: relative;
-    right: 0.31em;
-    animation: logoLeft 2s infinite;
-    animation-delay: 1s;
-}*/
 
 .nav-links:last-child {
     margin-right: 0;
@@ -810,15 +788,19 @@ body {
 
     .nav-links ul {
         background-color: #333333;
-        border-radius: 15%;
+        margin-top: 200px;
         display:flex;
         flex-direction: column;
         align-items: center;
     }
     .nav-links ul li {
-        margin: 2px 0;
+        width:100%;
+        margin-top: 20px;
+        padding: 2em O;
+        justify-content: space-between;
         align-items: center;
-        font-size: 1em;
+        font-size: 2em;
+        margin: 0 0;
     }
     .navbar .menu-hamburger{
         display:block;
@@ -852,7 +834,8 @@ body {
 
     @media (max-width: 730px) {
 
-        .nav-links ul { margin-top: 350px};
+        .nav-links ul { margin-top: 150px};
+        .nav-links ul li {font-size: 1.25em};
 
         #home {position: relative; height: 120vh;top:25px; flex-direction: column;padding: 2em 5% 0;margin-top: -3em;}
         .home-content {order:1; max-width: 100%; margin-top: -5em;}
@@ -881,6 +864,8 @@ body {
         .home-content h1 {font-size: 2em;}
         .home-content h3 {font-size: 1em;}
         .home-content p {font-size: 0.65em;}
+
+        .nav-links ul li {font-size: 1em;};
 
         .home-img {position: relative; left: 5%; right: 5%;bottom: -20px;padding-bottom: -50px;max-width: 300px;}
 
