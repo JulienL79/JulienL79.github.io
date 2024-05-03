@@ -17,7 +17,7 @@ body {
 
 .navbar {
     position: absolute;
-    padding: 30px;
+    padding: 2px 30px;
     display: flex;
     justify-content: space-between;
     background: #333333;
@@ -259,6 +259,27 @@ body {
     animation-delay: 2s, 3s;
 }
 
+#scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards
+  }
+
+  #scrollTopBtn:hover {
+    box-shadow: 0 0 1.4em #D19A66;
+  }
+  
+
 /* Contenu ABOUT ----------------------------------------------------------------*/
 
 .about-content {
@@ -373,7 +394,7 @@ body {
     opacity: 0;
 }
 
-#portfolio .portfolio-content .portfolio-text h3 {
+#projects .portfolio-content .portfolio-text h3 {
     color: #D19A66;
     font-size: 2em;
     font-weight: 700;
@@ -854,7 +875,8 @@ body {
 
         .workLink {width: 2.5em; height: 2.5em; font-size: 2.5em; margin: 1em 0.25em 0.5em 0;}
         .workLink:nth-of-type(4), .workLink:nth-of-type(5) {display:none;}
-        #portfolio .portfolio-content .portfolio-text h3 {font-size: 1.2em;font-weight: 700;}
+        #projects .portfolio-content .portfolio-text h3 {font-size: 1.2em;font-weight: 700;}
+
     }
     
     /* Small devices (landscape phones, 576px and up) */
@@ -868,6 +890,7 @@ body {
         .nav-links ul li {font-size: 1em;};
 
         .home-img {position: relative; left: 5%; right: 5%;bottom: -20px;padding-bottom: -50px;max-width: 300px;}
+        #scrollTopBtn {max-width: 40px;}
 
         .skills p {width: 2.5em; height: 2.5em; font-size: 2em; margin: 1em 0.25em 0.5em 0;}
 
