@@ -844,7 +844,8 @@ body {
     .portfolio-content {max-width: 100%;}
 
     .header-contact h1 {margin-bottom: 1em;}
-    .contact-content {grid-template-columns: 4.5em 20em;grid-template-rows: 5em 5em 5em 5em 5em 5em;}  
+    .contact-content {grid-template-columns: 25% 75%;grid-template-rows: 5em 5em 5em 5em 5em 5em;}
+    #contact p {width: 15em;}
     .section.actif .contact-content :nth-child(2n) {animation: slideLeft 1s ease forwards;animation-delay: .4s;}  
     .section.actif .contact-content :nth-child(2n+1) {animation: slideRight 1s ease forwards; animation-delay: .5s;}
 
@@ -855,7 +856,7 @@ body {
 
     @media (max-width: 730px) {
 
-        .nav-links ul { margin-top: 150px};
+        .nav-links ul {margin-top: 150px};
         .nav-links ul li {font-size: 1.25em};
 
         #home {position: relative; height: 120vh;top:25px; flex-direction: column;padding: 2em 5% 0;margin-top: -3em;}
