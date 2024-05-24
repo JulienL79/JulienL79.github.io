@@ -321,11 +321,18 @@ body {
     font-weight: 700;
     margin: -0.19em 0;
     opacity: 0;
+    margin-bottom: 1.5em;
 }
 
 .section.actif .skills-content h1 {
     animation: slideRight 1s ease forwards;
     animation-delay: .2s;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap; /* Pour permettre le retour à la ligne si nécessaire */
+    gap: 2.5em;
 }
 
 .skills p:nth-of-type(1) {
@@ -352,7 +359,7 @@ body {
     --i: 6;
 }
 
-.skills p {
+.techno {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -365,8 +372,30 @@ body {
     color: #D19A66;
     text-decoration: none;
     cursor: default;
-    margin: 1.5em 0.75em 1.5em 0;
     opacity: 0;
+    margin-bottom: 0.5em;
+}
+
+.techno::after {
+    content: attr(data-description);
+    display: block;
+    position: absolute;
+    top: 110%; /* Positionne en dessous du lien */
+    left: 50%;
+    font-size: 0.5em;
+    font-weight: 700;
+    transform: translateX(-50%);
+    background-color: transparent;
+    color: #D19A66;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none; /* Pour éviter les clics sur la description */
+    z-index: 10; /* Assurez-vous que la description est au-dessus des autres éléments */
+}
+
+.techno:hover::after {
+    opacity: 1;
 }
 
 .section.actif .skills-content .skills p {
@@ -392,9 +421,11 @@ body {
     font-weight: 700;
     margin: -0.19em 0;
     opacity: 0;
+    margin-bottom: 1.5em;
 }
 
 #projects .portfolio-content .portfolio-text h3 {
+    margin-top: 2em;
     color: #D19A66;
     font-size: 2em;
     font-weight: 700;
@@ -408,7 +439,12 @@ body {
 
 .section.actif .portfolio-content .portfolio-text h3 {
     animation: slideTop 1s ease forwards;
-    animation-delay: .4s;
+    animation-delay: 2s;
+}
+.work {
+    display: flex;
+    flex-wrap: wrap; /* Pour permettre le retour à la ligne si nécessaire */
+    gap: 2.5em; /* Espace entre les liens */
 }
 
 .workLink {
@@ -422,8 +458,31 @@ body {
     font-size: 3em;
     color: #333333;
     text-decoration: none;
-    margin: 1.5em 0.75em 1.5em 0;
     opacity: 0;
+    margin-bottom: 0.5em;
+    position: relative;
+}
+
+.workLink::after {
+    content: attr(data-description);
+    display: block;
+    position: absolute;
+    top: 110%; /* Positionne en dessous du lien */
+    left: 50%;
+    font-size: 0.5em;
+    font-weight: 700;
+    transform: translateX(-50%);
+    background-color: transparent;
+    color: #D19A66;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none; /* Pour éviter les clics sur la description */
+    z-index: 10; /* Assurez-vous que la description est au-dessus des autres éléments */
+}
+
+.workLink:hover::after {
+    opacity: 1;
 }
 
 .workLink:nth-of-type(1) {
@@ -444,6 +503,9 @@ body {
 
 .workLink:nth-of-type(5) {
     --i: 5;
+}
+.workLink:nth-of-type(6) {
+    --i: 6;
 }
 
 .section.actif .portfolio-content .workLink {
@@ -528,7 +590,6 @@ body {
     color: #D19A66;
     text-decoration: none;
     margin: 1.5em 1.4em 1.5em 0;
-    transition: .5s ease;
 }
 
 #contact p {
@@ -544,6 +605,10 @@ body {
     margin-right: 2em;
 }
 
+.section.actif .contact-content .icon-container {
+    animation: none;
+    opacity: 1;
+}
 
 .section.actif a:hover {
     background: #D19A66;
@@ -872,10 +937,9 @@ body {
 
         .social-media a {width: 2.5em; height: 2.5em; font-size: 1.5em; margin: 0.5em 1em 0.5em 0;justify-content: center;}
 
-        .skills p {width: 2.5em; height: 2.5em; font-size: 2.5em; margin: 1em 0.25em 0.5em 0;}
+        .skills p {width: 2.5em; height: 2.5em; font-size: 2.5em; /* margin: 1em 0.25em 0.5em 0;*/  }
 
-        .workLink {width: 2.5em; height: 2.5em; font-size: 2.5em; margin: 1em 0.25em 0.5em 0;}
-        .workLink:nth-of-type(4), .workLink:nth-of-type(5) {display:none;}
+        .workLink {width: 2.5em; height: 2.5em; font-size: 2.5em; /* margin: 1em 0.25em 0.5em 0; */}
         #projects .portfolio-content .portfolio-text h3 {font-size: 1.2em;font-weight: 700;}
 
     }

@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 // Exemple d'utilisation avec des mots
-const wordsOne = ["Développeur Web", "Militaire", "Comptable"];
+const wordsOne = ["Développeur Web", "Démineur", "Comptable"];
 const multipleTextElem = document.querySelector(".multiple-text");
 typeWriterEffect(wordsOne, multipleTextElem);
 
